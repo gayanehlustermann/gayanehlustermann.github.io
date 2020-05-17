@@ -1,0 +1,3006 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_21dcecf6758d46b5b3023a0f4ab7c7f7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    
+            <style> #vega_lite_0ccc2a23939d4b4e962fe40e8ac4d2bf {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    <script src="https://cdn.jsdelivr.net/npm/vega@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@3"></script>
+    
+            <style> #vega_lite_129d33f3617b47df9d3d300f95e75d3b {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_483ded34c0744ad5ab8d08329cbb560d {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_7e14f1bbf2034815a42469d7e56f6afb {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_af2a40a30dd34d4797325127056e0208 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_4a1cddf6b8ef43eba2d63f01dd8c9bd4 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_118f1ea0f65046fb8141e788f19c204d {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_8dedb14699f543e88ab07aac378d86ee {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_40220be0d11941fcb8012215e75da890 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_18598c3fed8c482e81242b51e17ad921 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_5049cdbae197449986b4087ededfa586 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_d44480ad48a64dbb8d2524938d7e528a {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_07f4fd330d544d04bd0b36dc539f8fc0 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_309f2345d35b4c29a029a595c90f1609 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_6c0564189ccf46e58433999fb9191788 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_3228fdb3feed4d398b681f77d0a4539c {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_f22e4352823e4d3898844590cb99a6ab {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_2013ed2e2cf64944a12e21fe7dea52c7 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_796a28b2abb743e181673731a3c83b69 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_bf39148d197c4264bb8f1d5078946638 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_c09fa4dddaf64be5ab366d28789e92ef {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_6a12a94a1aaa4e23ab8ed37ee62f31c1 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_06f23abce46b474785bbcfcbb97a7e96 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_cc9aee5867dd4c2d8ec71fe190f27063 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_eaac944a1d6a4a68b6a4861b3c1bbd6c {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_3986523797d5454090098bd18dbfb23a {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_a13a372c94c547d9a76418e6065d45fb {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_140f0be711144a11b056994a7029e558 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_7572df959a314133994cd584bb4b4a36 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_06e63316d48149be9132aa301f44d74f {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_5da5f50e4aad4e45bfb0b24cdea1b799 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_c25a062a05cf472d922f294d7de2a73e {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_6ed2dc234fdc47cbad009928d124bd65 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_f2f113afdc7e4160b774b65ac26d7b2c {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_d970cd79d1c54db1804cc263711030cd {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_d7f18711e38f463788ac54fb79acd12f {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_95f4951306a6464491b88aab96447212 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_5645f287d10143d8a24e1b18851cd2ff {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_f08517ead140448fa43d33956b6afe49 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_71e12a9641f44f7e86f4961f8d18b288 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_27eeb425e70444b8924220131e4e58d0 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_c8a3243a862744f0be0d2e10e7dcde11 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_fe1c4069d7fb4a518bf92835df9d0144 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_bb66ec500b7f43eeb3ca6c8beae7ee90 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_2d0fb4de6240487ab977641515e5c3e6 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_47ff884cc9b44877a227f9ed2554c0f0 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_393174526a4e440cbe7233f7c888d184 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_00a8cd5a57204a6ca7fc8611643cf67a {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_1c56be23bd7b49f8a4869b468a8271ac {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_832401531b5e459caccf56caf808190a {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_9a39640a73584c37aac6bef8e707c02e {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_7e60f05b36cb4426ad94955bd4f2d834 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_d9467096bafa418ab12a8e4eda09f7b5 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_4cde49070caa49fd9a3654d30665ab25 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_80ea97976ada4b53a513dad5c36659e1 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_b639606d33a44bec9cec7c98d110a44f {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_ad1fbd6cdf3241b5843254aa0bed2137 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_8acdff6e7d314221828e93002dfa2502 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_8f4558a772ae42dcad2c206cc5323ee2 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_833a0b4f0a3e42dfaf9ede5f4cf611f8 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_e1c331f79cbe43bebdcecc6f50625246 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_c6b97d4d5f6d431ba0fb74234f394ad7 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_235ef4f0070f4f75af0ecc6fbbbe29e9 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_d8b42cc6438b43ce8aa2bff75f40dc40 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_34a715c114b942d589214b43d2159ceb {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_0021fb49580043058d8b7c851dabdda8 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_a5a4db5f3bc64144b0e879b99e8cf216 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_948a252d66f74e78b1592a9d3ada3eec {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_518232a71a99448eb3f1b5b29591df1b {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_1467555718a54ce4971fa2f799896279 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_21dcecf6758d46b5b3023a0f4ab7c7f7" ></div>
+        
+</body>
+<script>    
+    
+            var map_21dcecf6758d46b5b3023a0f4ab7c7f7 = L.map(
+                "map_21dcecf6758d46b5b3023a0f4ab7c7f7",
+                {
+                    center: [54.525963, 15.255119],
+                    crs: L.CRS.EPSG3857,
+                    zoomControl: true,
+                    zoom: 2,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_30b3ef4e0c504c8bbc753aa97ea9f359 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+            var marker_c2b7bdc8c7f0408f85bfc6e58d27de5d = L.marker(
+                [39.399872, -7.5244539999999995],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_fbc5bf020ff3403c9d7d752485c2d6bc = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_0ccc2a23939d4b4e962fe40e8ac4d2bf = $(`             <div id="vega_lite_0ccc2a23939d4b4e962fe40e8ac4d2bf"></div>             `)[0];
+            popup_fbc5bf020ff3403c9d7d752485c2d6bc.setContent(vega_lite_0ccc2a23939d4b4e962fe40e8ac4d2bf);
+        
+
+        marker_c2b7bdc8c7f0408f85bfc6e58d27de5d.bindPopup(popup_fbc5bf020ff3403c9d7d752485c2d6bc)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_0ccc2a23939d4b4e962fe40e8ac4d2bf, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur PT", "mark": "bar", "data": {"values": [{"xx": "PL", "yy": 43}, {"xx": "CZ", "yy": 22}, {"xx": "DK", "yy": 9}, {"xx": "BE", "yy": 30}, {"xx": "NO", "yy": 6}, {"xx": "AT", "yy": 6}, {"xx": "HR", "yy": 8}, {"xx": "LT", "yy": 24}, {"xx": "NL", "yy": 18}, {"xx": "SI", "yy": 6}, {"xx": "SK", "yy": 10}, {"xx": "UK", "yy": 17}, {"xx": "IE", "yy": 3}, {"xx": "GR", "yy": 5}, {"xx": "RO", "yy": 22}, {"xx": "DE", "yy": 31}, {"xx": "EE", "yy": 8}, {"xx": "CH", "yy": 1}, {"xx": "MT", "yy": 2}, {"xx": "FI", "yy": 22}, {"xx": "HU", "yy": 18}, {"xx": "LV", "yy": 11}, {"xx": "CY", "yy": 1}, {"xx": "FR", "yy": 44}, {"xx": "BG", "yy": 7}, {"xx": "ES", "yy": 250}, {"xx": "TR", "yy": 24}, {"xx": "SE", "yy": 16}, {"xx": "IT", "yy": 74}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_c2b7bdc8c7f0408f85bfc6e58d27de5d.bindTooltip(
+                `<div>
+                     professeur: PT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_838992ea65604f82b32fe62ede952070 = L.marker(
+                [51.919438, 19.845136],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_09dd08cc93544ddeaeaa887bf0049d9f = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_129d33f3617b47df9d3d300f95e75d3b = $(`             <div id="vega_lite_129d33f3617b47df9d3d300f95e75d3b"></div>             `)[0];
+            popup_09dd08cc93544ddeaeaa887bf0049d9f.setContent(vega_lite_129d33f3617b47df9d3d300f95e75d3b);
+        
+
+        marker_838992ea65604f82b32fe62ede952070.bindPopup(popup_09dd08cc93544ddeaeaa887bf0049d9f)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_129d33f3617b47df9d3d300f95e75d3b, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur PL", "mark": "bar", "data": {"values": [{"xx": "PT", "yy": 244}, {"xx": "PL", "yy": 38}, {"xx": "CZ", "yy": 386}, {"xx": "DK", "yy": 32}, {"xx": "BE", "yy": 68}, {"xx": "NO", "yy": 21}, {"xx": "AT", "yy": 48}, {"xx": "HR", "yy": 19}, {"xx": "HU", "yy": 92}, {"xx": "NL", "yy": 39}, {"xx": "SI", "yy": 57}, {"xx": "SK", "yy": 380}, {"xx": "UK", "yy": 98}, {"xx": "IE", "yy": 13}, {"xx": "GR", "yy": 63}, {"xx": "RO", "yy": 50}, {"xx": "DE", "yy": 503}, {"xx": "CH", "yy": 16}, {"xx": "MT", "yy": 9}, {"xx": "FI", "yy": 82}, {"xx": "EE", "yy": 32}, {"xx": "IS", "yy": 10}, {"xx": "LV", "yy": 79}, {"xx": "CY", "yy": 19}, {"xx": "LT", "yy": 154}, {"xx": "BG", "yy": 71}, {"xx": "ES", "yy": 522}, {"xx": "TR", "yy": 257}, {"xx": "FR", "yy": 258}, {"xx": "SE", "yy": 33}, {"xx": "IT", "yy": 321}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_838992ea65604f82b32fe62ede952070.bindTooltip(
+                `<div>
+                     professeur: PL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_94fb21ec02b342218a91ce01fdbd0c4b = L.marker(
+                [49.817492, 16.172962000000002],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_83723b0dbbb44e289749241c2e7ea3a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_483ded34c0744ad5ab8d08329cbb560d = $(`             <div id="vega_lite_483ded34c0744ad5ab8d08329cbb560d"></div>             `)[0];
+            popup_83723b0dbbb44e289749241c2e7ea3a8.setContent(vega_lite_483ded34c0744ad5ab8d08329cbb560d);
+        
+
+        marker_94fb21ec02b342218a91ce01fdbd0c4b.bindPopup(popup_83723b0dbbb44e289749241c2e7ea3a8)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_483ded34c0744ad5ab8d08329cbb560d, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur CZ", "mark": "bar", "data": {"values": [{"xx": "PT", "yy": 82}, {"xx": "PL", "yy": 240}, {"xx": "CZ", "yy": 20}, {"xx": "DK", "yy": 14}, {"xx": "BE", "yy": 34}, {"xx": "AT", "yy": 50}, {"xx": "HR", "yy": 7}, {"xx": "HU", "yy": 43}, {"xx": "NL", "yy": 19}, {"xx": "SI", "yy": 44}, {"xx": "IS", "yy": 4}, {"xx": "SK", "yy": 425}, {"xx": "UK", "yy": 68}, {"xx": "IE", "yy": 11}, {"xx": "GR", "yy": 30}, {"xx": "RO", "yy": 17}, {"xx": "DE", "yy": 236}, {"xx": "CH", "yy": 6}, {"xx": "MT", "yy": 7}, {"xx": "FI", "yy": 80}, {"xx": "EE", "yy": 24}, {"xx": "IT", "yy": 85}, {"xx": "LV", "yy": 22}, {"xx": "CY", "yy": 10}, {"xx": "LT", "yy": 28}, {"xx": "BG", "yy": 44}, {"xx": "ES", "yy": 174}, {"xx": "TR", "yy": 122}, {"xx": "FR", "yy": 125}, {"xx": "SE", "yy": 13}, {"xx": "NO", "yy": 12}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_94fb21ec02b342218a91ce01fdbd0c4b.bindTooltip(
+                `<div>
+                     professeur: CZ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1824f862d76d4ac6b8505a2006be5cb3 = L.marker(
+                [56.26392, 10.201785],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_bb842257c7ca4d3fbe2e602fda7b1952 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_7e14f1bbf2034815a42469d7e56f6afb = $(`             <div id="vega_lite_7e14f1bbf2034815a42469d7e56f6afb"></div>             `)[0];
+            popup_bb842257c7ca4d3fbe2e602fda7b1952.setContent(vega_lite_7e14f1bbf2034815a42469d7e56f6afb);
+        
+
+        marker_1824f862d76d4ac6b8505a2006be5cb3.bindPopup(popup_bb842257c7ca4d3fbe2e602fda7b1952)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_7e14f1bbf2034815a42469d7e56f6afb, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur DK", "mark": "bar", "data": {"values": [{"xx": "PT", "yy": 21}, {"xx": "PL", "yy": 13}, {"xx": "CZ", "yy": 11}, {"xx": "DK", "yy": 16}, {"xx": "BE", "yy": 19}, {"xx": "NO", "yy": 11}, {"xx": "AT", "yy": 10}, {"xx": "HR", "yy": 1}, {"xx": "LT", "yy": 10}, {"xx": "NL", "yy": 31}, {"xx": "SI", "yy": 6}, {"xx": "HU", "yy": 4}, {"xx": "SK", "yy": 3}, {"xx": "UK", "yy": 27}, {"xx": "IE", "yy": 6}, {"xx": "GR", "yy": 5}, {"xx": "RO", "yy": 2}, {"xx": "DE", "yy": 37}, {"xx": "CH", "yy": 2}, {"xx": "MT", "yy": 5}, {"xx": "FI", "yy": 16}, {"xx": "EE", "yy": 5}, {"xx": "IS", "yy": 12}, {"xx": "LV", "yy": 9}, {"xx": "FR", "yy": 21}, {"xx": "BG", "yy": 1}, {"xx": "ES", "yy": 43}, {"xx": "TR", "yy": 20}, {"xx": "SE", "yy": 13}, {"xx": "IT", "yy": 22}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_1824f862d76d4ac6b8505a2006be5cb3.bindTooltip(
+                `<div>
+                     professeur: DK
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_08d06775715b46e9839e2309856639c4 = L.marker(
+                [50.503887, 5.169936],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_6ddf1e6c73454389bf3d632fa37cfa78 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_af2a40a30dd34d4797325127056e0208 = $(`             <div id="vega_lite_af2a40a30dd34d4797325127056e0208"></div>             `)[0];
+            popup_6ddf1e6c73454389bf3d632fa37cfa78.setContent(vega_lite_af2a40a30dd34d4797325127056e0208);
+        
+
+        marker_08d06775715b46e9839e2309856639c4.bindPopup(popup_6ddf1e6c73454389bf3d632fa37cfa78)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_af2a40a30dd34d4797325127056e0208, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur BE", "mark": "bar", "data": {"values": [{"xx": "PT", "yy": 65}, {"xx": "PL", "yy": 46}, {"xx": "CZ", "yy": 26}, {"xx": "ES", "yy": 147}, {"xx": "BE", "yy": 12}, {"xx": "NO", "yy": 24}, {"xx": "AT", "yy": 30}, {"xx": "HR", "yy": 4}, {"xx": "HU", "yy": 25}, {"xx": "NL", "yy": 93}, {"xx": "SI", "yy": 8}, {"xx": "SK", "yy": 5}, {"xx": "UK", "yy": 54}, {"xx": "SE", "yy": 34}, {"xx": "GR", "yy": 13}, {"xx": "RO", "yy": 28}, {"xx": "DE", "yy": 54}, {"xx": "CH", "yy": 18}, {"xx": "MT", "yy": 4}, {"xx": "FI", "yy": 106}, {"xx": "EE", "yy": 10}, {"xx": "LU", "yy": 1}, {"xx": "LV", "yy": 11}, {"xx": "CY", "yy": 6}, {"xx": "LT", "yy": 25}, {"xx": "BG", "yy": 16}, {"xx": "DK", "yy": 27}, {"xx": "TR", "yy": 51}, {"xx": "FR", "yy": 128}, {"xx": "IE", "yy": 15}, {"xx": "IT", "yy": 82}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_08d06775715b46e9839e2309856639c4.bindTooltip(
+                `<div>
+                     professeur: BE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_89b97277f1e14518be3c598abda64ba0 = L.marker(
+                [47.516231, 15.250072],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_9ab8c13354984a1ea831fb841989e479 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_4a1cddf6b8ef43eba2d63f01dd8c9bd4 = $(`             <div id="vega_lite_4a1cddf6b8ef43eba2d63f01dd8c9bd4"></div>             `)[0];
+            popup_9ab8c13354984a1ea831fb841989e479.setContent(vega_lite_4a1cddf6b8ef43eba2d63f01dd8c9bd4);
+        
+
+        marker_89b97277f1e14518be3c598abda64ba0.bindPopup(popup_9ab8c13354984a1ea831fb841989e479)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_4a1cddf6b8ef43eba2d63f01dd8c9bd4, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur AT", "mark": "bar", "data": {"values": [{"xx": "PT", "yy": 28}, {"xx": "PL", "yy": 28}, {"xx": "CZ", "yy": 43}, {"xx": "DK", "yy": 12}, {"xx": "BE", "yy": 30}, {"xx": "NO", "yy": 21}, {"xx": "AT", "yy": 12}, {"xx": "HR", "yy": 15}, {"xx": "HU", "yy": 39}, {"xx": "NL", "yy": 44}, {"xx": "SI", "yy": 16}, {"xx": "SK", "yy": 2}, {"xx": "UK", "yy": 32}, {"xx": "IE", "yy": 10}, {"xx": "GR", "yy": 18}, {"xx": "RO", "yy": 22}, {"xx": "DE", "yy": 146}, {"xx": "CY", "yy": 3}, {"xx": "CH", "yy": 36}, {"xx": "MT", "yy": 3}, {"xx": "FI", "yy": 57}, {"xx": "EE", "yy": 7}, {"xx": "IS", "yy": 5}, {"xx": "LV", "yy": 16}, {"xx": "LT", "yy": 16}, {"xx": "FR", "yy": 49}, {"xx": "BG", "yy": 21}, {"xx": "ES", "yy": 68}, {"xx": "TR", "yy": 49}, {"xx": "SE", "yy": 31}, {"xx": "IT", "yy": 62}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_89b97277f1e14518be3c598abda64ba0.bindTooltip(
+                `<div>
+                     professeur: AT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_16bb7c5b70e64a5fb6997a058d170a91 = L.marker(
+                [45.1, 15.899999999999999],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_9f5752adc7804bae95c05fa94cda0ee6 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_118f1ea0f65046fb8141e788f19c204d = $(`             <div id="vega_lite_118f1ea0f65046fb8141e788f19c204d"></div>             `)[0];
+            popup_9f5752adc7804bae95c05fa94cda0ee6.setContent(vega_lite_118f1ea0f65046fb8141e788f19c204d);
+        
+
+        marker_16bb7c5b70e64a5fb6997a058d170a91.bindPopup(popup_9f5752adc7804bae95c05fa94cda0ee6)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_118f1ea0f65046fb8141e788f19c204d, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur HR", "mark": "bar", "data": {"values": [{"xx": "PT", "yy": 6}, {"xx": "PL", "yy": 7}, {"xx": "DE", "yy": 5}, {"xx": "CZ", "yy": 2}, {"xx": "SI", "yy": 17}, {"xx": "BE", "yy": 1}, {"xx": "FI", "yy": 1}, {"xx": "IT", "yy": 10}, {"xx": "AT", "yy": 7}, {"xx": "LT", "yy": 2}, {"xx": "DK", "yy": 1}, {"xx": "FR", "yy": 1}, {"xx": "BG", "yy": 1}, {"xx": "ES", "yy": 9}, {"xx": "HU", "yy": 1}, {"xx": "SK", "yy": 1}, {"xx": "IE", "yy": 1}, {"xx": "UK", "yy": 5}, {"xx": "SE", "yy": 5}, {"xx": "GR", "yy": 1}, {"xx": "RO", "yy": 1}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_16bb7c5b70e64a5fb6997a058d170a91.bindTooltip(
+                `<div>
+                     professeur: HR
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba552e89286544b9aeaaf8795513c55a = L.marker(
+                [55.169438, 24.581274999999998],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_bb35292173e14875a71ada92e99a9e22 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_8dedb14699f543e88ab07aac378d86ee = $(`             <div id="vega_lite_8dedb14699f543e88ab07aac378d86ee"></div>             `)[0];
+            popup_bb35292173e14875a71ada92e99a9e22.setContent(vega_lite_8dedb14699f543e88ab07aac378d86ee);
+        
+
+        marker_ba552e89286544b9aeaaf8795513c55a.bindPopup(popup_bb35292173e14875a71ada92e99a9e22)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_8dedb14699f543e88ab07aac378d86ee, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur LT", "mark": "bar", "data": {"values": [{"xx": "PT", "yy": 59}, {"xx": "PL", "yy": 85}, {"xx": "CZ", "yy": 23}, {"xx": "DK", "yy": 18}, {"xx": "BE", "yy": 30}, {"xx": "NO", "yy": 13}, {"xx": "AT", "yy": 22}, {"xx": "HR", "yy": 4}, {"xx": "HU", "yy": 15}, {"xx": "LT", "yy": 28}, {"xx": "NL", "yy": 13}, {"xx": "SI", "yy": 15}, {"xx": "IS", "yy": 2}, {"xx": "SK", "yy": 10}, {"xx": "UK", "yy": 26}, {"xx": "IE", "yy": 2}, {"xx": "GR", "yy": 18}, {"xx": "RO", "yy": 5}, {"xx": "DE", "yy": 79}, {"xx": "CH", "yy": 3}, {"xx": "MT", "yy": 4}, {"xx": "FI", "yy": 63}, {"xx": "EE", "yy": 24}, {"xx": "LU", "yy": 1}, {"xx": "LV", "yy": 84}, {"xx": "CY", "yy": 3}, {"xx": "FR", "yy": 52}, {"xx": "BG", "yy": 21}, {"xx": "ES", "yy": 50}, {"xx": "TR", "yy": 101}, {"xx": "SE", "yy": 16}, {"xx": "IT", "yy": 39}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_ba552e89286544b9aeaaf8795513c55a.bindTooltip(
+                `<div>
+                     professeur: LT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a79973a5a74a4b9ba61ed952be093514 = L.marker(
+                [53.41291, -7.54389],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_784743f0b6d9488f9dc19f732914d6a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_40220be0d11941fcb8012215e75da890 = $(`             <div id="vega_lite_40220be0d11941fcb8012215e75da890"></div>             `)[0];
+            popup_784743f0b6d9488f9dc19f732914d6a3.setContent(vega_lite_40220be0d11941fcb8012215e75da890);
+        
+
+        marker_a79973a5a74a4b9ba61ed952be093514.bindPopup(popup_784743f0b6d9488f9dc19f732914d6a3)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_40220be0d11941fcb8012215e75da890, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur IE", "mark": "bar", "data": {"values": [{"xx": "PL", "yy": 8}, {"xx": "CZ", "yy": 2}, {"xx": "DK", "yy": 4}, {"xx": "BE", "yy": 7}, {"xx": "NO", "yy": 2}, {"xx": "AT", "yy": 9}, {"xx": "LT", "yy": 2}, {"xx": "NL", "yy": 18}, {"xx": "SI", "yy": 1}, {"xx": "SK", "yy": 1}, {"xx": "UK", "yy": 11}, {"xx": "IE", "yy": 5}, {"xx": "GR", "yy": 2}, {"xx": "RO", "yy": 3}, {"xx": "DE", "yy": 27}, {"xx": "EE", "yy": 1}, {"xx": "CH", "yy": 1}, {"xx": "MT", "yy": 3}, {"xx": "FI", "yy": 13}, {"xx": "HU", "yy": 5}, {"xx": "IS", "yy": 1}, {"xx": "FR", "yy": 24}, {"xx": "ES", "yy": 22}, {"xx": "TR", "yy": 6}, {"xx": "SE", "yy": 5}, {"xx": "IT", "yy": 14}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_a79973a5a74a4b9ba61ed952be093514.bindTooltip(
+                `<div>
+                     professeur: IE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f27933ca90ed448492815c5c976f738f = L.marker(
+                [52.132633, 5.991266],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_41822ba25b1c4a079b34891e3b7aa403 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_18598c3fed8c482e81242b51e17ad921 = $(`             <div id="vega_lite_18598c3fed8c482e81242b51e17ad921"></div>             `)[0];
+            popup_41822ba25b1c4a079b34891e3b7aa403.setContent(vega_lite_18598c3fed8c482e81242b51e17ad921);
+        
+
+        marker_f27933ca90ed448492815c5c976f738f.bindPopup(popup_41822ba25b1c4a079b34891e3b7aa403)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_18598c3fed8c482e81242b51e17ad921, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur NL", "mark": "bar", "data": {"values": [{"xx": "PT", "yy": 30}, {"xx": "PL", "yy": 30}, {"xx": "CZ", "yy": 12}, {"xx": "DK", "yy": 17}, {"xx": "MT", "yy": 1}, {"xx": "BE", "yy": 56}, {"xx": "NO", "yy": 34}, {"xx": "AT", "yy": 28}, {"xx": "HR", "yy": 3}, {"xx": "LT", "yy": 15}, {"xx": "NL", "yy": 8}, {"xx": "SI", "yy": 2}, {"xx": "SK", "yy": 11}, {"xx": "UK", "yy": 51}, {"xx": "IE", "yy": 12}, {"xx": "GR", "yy": 3}, {"xx": "RO", "yy": 10}, {"xx": "DE", "yy": 72}, {"xx": "CH", "yy": 9}, {"xx": "HU", "yy": 37}, {"xx": "FI", "yy": 65}, {"xx": "EE", "yy": 1}, {"xx": "IS", "yy": 4}, {"xx": "LV", "yy": 15}, {"xx": "FR", "yy": 30}, {"xx": "BG", "yy": 4}, {"xx": "ES", "yy": 58}, {"xx": "TR", "yy": 32}, {"xx": "SE", "yy": 25}, {"xx": "IT", "yy": 31}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_f27933ca90ed448492815c5c976f738f.bindTooltip(
+                `<div>
+                     professeur: NL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4b66059ccadc488bbc78b57fde21e1d8 = L.marker(
+                [46.151241, 15.695463],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_fd0c60e3d7794c72a9c4f17f3e11fb4c = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_5049cdbae197449986b4087ededfa586 = $(`             <div id="vega_lite_5049cdbae197449986b4087ededfa586"></div>             `)[0];
+            popup_fd0c60e3d7794c72a9c4f17f3e11fb4c.setContent(vega_lite_5049cdbae197449986b4087ededfa586);
+        
+
+        marker_4b66059ccadc488bbc78b57fde21e1d8.bindPopup(popup_fd0c60e3d7794c72a9c4f17f3e11fb4c)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_5049cdbae197449986b4087ededfa586, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur SI", "mark": "bar", "data": {"values": [{"xx": "PT", "yy": 17}, {"xx": "PL", "yy": 28}, {"xx": "CZ", "yy": 30}, {"xx": "DK", "yy": 2}, {"xx": "NO", "yy": 10}, {"xx": "AT", "yy": 15}, {"xx": "HR", "yy": 23}, {"xx": "HU", "yy": 12}, {"xx": "NL", "yy": 3}, {"xx": "SI", "yy": 7}, {"xx": "SK", "yy": 11}, {"xx": "UK", "yy": 8}, {"xx": "SE", "yy": 6}, {"xx": "GR", "yy": 1}, {"xx": "RO", "yy": 2}, {"xx": "DE", "yy": 12}, {"xx": "LI", "yy": 1}, {"xx": "CH", "yy": 3}, {"xx": "MT", "yy": 1}, {"xx": "FI", "yy": 14}, {"xx": "EE", "yy": 2}, {"xx": "IT", "yy": 18}, {"xx": "IS", "yy": 5}, {"xx": "LT", "yy": 2}, {"xx": "FR", "yy": 8}, {"xx": "BG", "yy": 5}, {"xx": "ES", "yy": 28}, {"xx": "TR", "yy": 19}, {"xx": "IE", "yy": 2}, {"xx": "BE", "yy": 13}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_4b66059ccadc488bbc78b57fde21e1d8.bindTooltip(
+                `<div>
+                     professeur: SI
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_68d1699afdf5423d8f8293dd95e5a790 = L.marker(
+                [48.669026, 20.399024],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_e99df89dc8da4fad959225a9ff55cd70 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_d44480ad48a64dbb8d2524938d7e528a = $(`             <div id="vega_lite_d44480ad48a64dbb8d2524938d7e528a"></div>             `)[0];
+            popup_e99df89dc8da4fad959225a9ff55cd70.setContent(vega_lite_d44480ad48a64dbb8d2524938d7e528a);
+        
+
+        marker_68d1699afdf5423d8f8293dd95e5a790.bindPopup(popup_e99df89dc8da4fad959225a9ff55cd70)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_d44480ad48a64dbb8d2524938d7e528a, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur SK", "mark": "bar", "data": {"values": [{"xx": "PT", "yy": 15}, {"xx": "PL", "yy": 140}, {"xx": "CZ", "yy": 287}, {"xx": "DK", "yy": 1}, {"xx": "BE", "yy": 4}, {"xx": "MT", "yy": 1}, {"xx": "NO", "yy": 3}, {"xx": "AT", "yy": 8}, {"xx": "HR", "yy": 3}, {"xx": "LT", "yy": 13}, {"xx": "NL", "yy": 12}, {"xx": "SI", "yy": 8}, {"xx": "SK", "yy": 2}, {"xx": "UK", "yy": 19}, {"xx": "GR", "yy": 8}, {"xx": "RO", "yy": 18}, {"xx": "DE", "yy": 51}, {"xx": "HU", "yy": 44}, {"xx": "FI", "yy": 14}, {"xx": "EE", "yy": 4}, {"xx": "IS", "yy": 6}, {"xx": "LV", "yy": 4}, {"xx": "CY", "yy": 3}, {"xx": "FR", "yy": 29}, {"xx": "BG", "yy": 8}, {"xx": "ES", "yy": 23}, {"xx": "TR", "yy": 14}, {"xx": "SE", "yy": 4}, {"xx": "IT", "yy": 25}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_68d1699afdf5423d8f8293dd95e5a790.bindTooltip(
+                `<div>
+                     professeur: SK
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7914907dec604649b25e2fa21cd30566 = L.marker(
+                [55.378052, -2.7359730000000004],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_5cbbfe78cf8845cda967a85a042477ae = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_07f4fd330d544d04bd0b36dc539f8fc0 = $(`             <div id="vega_lite_07f4fd330d544d04bd0b36dc539f8fc0"></div>             `)[0];
+            popup_5cbbfe78cf8845cda967a85a042477ae.setContent(vega_lite_07f4fd330d544d04bd0b36dc539f8fc0);
+        
+
+        marker_7914907dec604649b25e2fa21cd30566.bindPopup(popup_5cbbfe78cf8845cda967a85a042477ae)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_07f4fd330d544d04bd0b36dc539f8fc0, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur UK", "mark": "bar", "data": {"values": [{"xx": "PT", "yy": 44}, {"xx": "PL", "yy": 70}, {"xx": "BE", "yy": 43}, {"xx": "DK", "yy": 42}, {"xx": "CZ", "yy": 59}, {"xx": "NO", "yy": 46}, {"xx": "AT", "yy": 34}, {"xx": "HR", "yy": 11}, {"xx": "HU", "yy": 38}, {"xx": "LT", "yy": 18}, {"xx": "NL", "yy": 85}, {"xx": "SI", "yy": 12}, {"xx": "SK", "yy": 9}, {"xx": "UK", "yy": 18}, {"xx": "LU", "yy": 1}, {"xx": "GR", "yy": 51}, {"xx": "RO", "yy": 31}, {"xx": "IE", "yy": 5}, {"xx": "DE", "yy": 229}, {"xx": "LI", "yy": 1}, {"xx": "CH", "yy": 13}, {"xx": "MT", "yy": 19}, {"xx": "FI", "yy": 115}, {"xx": "EE", "yy": 14}, {"xx": "IS", "yy": 5}, {"xx": "LV", "yy": 5}, {"xx": "CY", "yy": 12}, {"xx": "FR", "yy": 200}, {"xx": "BG", "yy": 31}, {"xx": "ES", "yy": 174}, {"xx": "TR", "yy": 62}, {"xx": "SE", "yy": 62}, {"xx": "IT", "yy": 118}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_7914907dec604649b25e2fa21cd30566.bindTooltip(
+                `<div>
+                     professeur: UK
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be54428a34b7438094b7becced90946f = L.marker(
+                [49.815273, 6.829583],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_1f49cda0c8214342818a049790032648 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_309f2345d35b4c29a029a595c90f1609 = $(`             <div id="vega_lite_309f2345d35b4c29a029a595c90f1609"></div>             `)[0];
+            popup_1f49cda0c8214342818a049790032648.setContent(vega_lite_309f2345d35b4c29a029a595c90f1609);
+        
+
+        marker_be54428a34b7438094b7becced90946f.bindPopup(popup_1f49cda0c8214342818a049790032648)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_309f2345d35b4c29a029a595c90f1609, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur LU", "mark": "bar", "data": {"values": [{"xx": "BE", "yy": 2}, {"xx": "FR", "yy": 1}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_be54428a34b7438094b7becced90946f.bindTooltip(
+                `<div>
+                     professeur: LU
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95da6cf5145d429bbb9b2ec224637944 = L.marker(
+                [39.074208, 22.524312],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_302c85cd1304477a8a7dcf58d31772d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_6c0564189ccf46e58433999fb9191788 = $(`             <div id="vega_lite_6c0564189ccf46e58433999fb9191788"></div>             `)[0];
+            popup_302c85cd1304477a8a7dcf58d31772d8.setContent(vega_lite_6c0564189ccf46e58433999fb9191788);
+        
+
+        marker_95da6cf5145d429bbb9b2ec224637944.bindPopup(popup_302c85cd1304477a8a7dcf58d31772d8)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_6c0564189ccf46e58433999fb9191788, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur GR", "mark": "bar", "data": {"values": [{"xx": "PT", "yy": 24}, {"xx": "PL", "yy": 35}, {"xx": "CZ", "yy": 9}, {"xx": "ES", "yy": 50}, {"xx": "BE", "yy": 14}, {"xx": "NO", "yy": 3}, {"xx": "AT", "yy": 24}, {"xx": "HR", "yy": 1}, {"xx": "LT", "yy": 5}, {"xx": "NL", "yy": 16}, {"xx": "SI", "yy": 4}, {"xx": "SK", "yy": 4}, {"xx": "UK", "yy": 35}, {"xx": "IE", "yy": 2}, {"xx": "GR", "yy": 1}, {"xx": "RO", "yy": 32}, {"xx": "DE", "yy": 65}, {"xx": "CH", "yy": 4}, {"xx": "HU", "yy": 11}, {"xx": "FI", "yy": 11}, {"xx": "EE", "yy": 5}, {"xx": "LV", "yy": 1}, {"xx": "CY", "yy": 40}, {"xx": "FR", "yy": 78}, {"xx": "BG", "yy": 13}, {"xx": "DK", "yy": 9}, {"xx": "TR", "yy": 37}, {"xx": "SE", "yy": 6}, {"xx": "IT", "yy": 60}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_95da6cf5145d429bbb9b2ec224637944.bindTooltip(
+                `<div>
+                     professeur: GR
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_82d349c6f2d640a2bfe434ee31ea7a3c = L.marker(
+                [45.943161, 25.66676],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_ed9b22cc9e9c4785a09c2737afa75c85 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_3228fdb3feed4d398b681f77d0a4539c = $(`             <div id="vega_lite_3228fdb3feed4d398b681f77d0a4539c"></div>             `)[0];
+            popup_ed9b22cc9e9c4785a09c2737afa75c85.setContent(vega_lite_3228fdb3feed4d398b681f77d0a4539c);
+        
+
+        marker_82d349c6f2d640a2bfe434ee31ea7a3c.bindPopup(popup_ed9b22cc9e9c4785a09c2737afa75c85)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_3228fdb3feed4d398b681f77d0a4539c, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur RO", "mark": "bar", "data": {"values": [{"xx": "PT", "yy": 70}, {"xx": "PL", "yy": 20}, {"xx": "CZ", "yy": 16}, {"xx": "DK", "yy": 10}, {"xx": "MT", "yy": 1}, {"xx": "BE", "yy": 43}, {"xx": "AT", "yy": 32}, {"xx": "HR", "yy": 4}, {"xx": "LT", "yy": 4}, {"xx": "NL", "yy": 10}, {"xx": "SI", "yy": 2}, {"xx": "IS", "yy": 1}, {"xx": "SK", "yy": 13}, {"xx": "UK", "yy": 23}, {"xx": "IE", "yy": 1}, {"xx": "GR", "yy": 59}, {"xx": "RO", "yy": 5}, {"xx": "DE", "yy": 107}, {"xx": "LI", "yy": 1}, {"xx": "CH", "yy": 5}, {"xx": "HU", "yy": 148}, {"xx": "FI", "yy": 13}, {"xx": "EE", "yy": 2}, {"xx": "IT", "yy": 163}, {"xx": "LV", "yy": 3}, {"xx": "FR", "yy": 294}, {"xx": "BG", "yy": 36}, {"xx": "ES", "yy": 102}, {"xx": "TR", "yy": 79}, {"xx": "SE", "yy": 3}, {"xx": "NO", "yy": 3}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_82d349c6f2d640a2bfe434ee31ea7a3c.bindTooltip(
+                `<div>
+                     professeur: RO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_912d2db0fa57414a8d2012d585dc369d = L.marker(
+                [51.165691, 11.151525999999999],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_0717aa14cf4245d5903b6e710dae4de2 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_f22e4352823e4d3898844590cb99a6ab = $(`             <div id="vega_lite_f22e4352823e4d3898844590cb99a6ab"></div>             `)[0];
+            popup_0717aa14cf4245d5903b6e710dae4de2.setContent(vega_lite_f22e4352823e4d3898844590cb99a6ab);
+        
+
+        marker_912d2db0fa57414a8d2012d585dc369d.bindPopup(popup_0717aa14cf4245d5903b6e710dae4de2)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_f22e4352823e4d3898844590cb99a6ab, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur DE", "mark": "bar", "data": {"values": [{"xx": "PT", "yy": 73}, {"xx": "PL", "yy": 335}, {"xx": "CZ", "yy": 96}, {"xx": "DK", "yy": 44}, {"xx": "BE", "yy": 54}, {"xx": "NO", "yy": 53}, {"xx": "AT", "yy": 154}, {"xx": "HR", "yy": 22}, {"xx": "HU", "yy": 129}, {"xx": "NL", "yy": 95}, {"xx": "SI", "yy": 17}, {"xx": "SK", "yy": 38}, {"xx": "LU", "yy": 4}, {"xx": "UK", "yy": 210}, {"xx": "IE", "yy": 33}, {"xx": "GR", "yy": 66}, {"xx": "RO", "yy": 79}, {"xx": "DE", "yy": 70}, {"xx": "LI", "yy": 1}, {"xx": "EE", "yy": 30}, {"xx": "CH", "yy": 77}, {"xx": "MT", "yy": 4}, {"xx": "FI", "yy": 203}, {"xx": "LT", "yy": 53}, {"xx": "IS", "yy": 14}, {"xx": "LV", "yy": 54}, {"xx": "CY", "yy": 6}, {"xx": "FR", "yy": 267}, {"xx": "BG", "yy": 47}, {"xx": "ES", "yy": 323}, {"xx": "TR", "yy": 154}, {"xx": "SE", "yy": 94}, {"xx": "IT", "yy": 239}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_912d2db0fa57414a8d2012d585dc369d.bindTooltip(
+                `<div>
+                     professeur: DE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2d8f59299cd841b7874a9b6436ffc0bf = L.marker(
+                [47.166, 10.255372999999999],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_66b39caa498c4ea0af0c8fa775ddb7b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_2013ed2e2cf64944a12e21fe7dea52c7 = $(`             <div id="vega_lite_2013ed2e2cf64944a12e21fe7dea52c7"></div>             `)[0];
+            popup_66b39caa498c4ea0af0c8fa775ddb7b0.setContent(vega_lite_2013ed2e2cf64944a12e21fe7dea52c7);
+        
+
+        marker_2d8f59299cd841b7874a9b6436ffc0bf.bindPopup(popup_66b39caa498c4ea0af0c8fa775ddb7b0)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_2013ed2e2cf64944a12e21fe7dea52c7, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur LI", "mark": "bar", "data": {"values": [{"xx": "PL", "yy": 1}, {"xx": "UK", "yy": 1}, {"xx": "NL", "yy": 3}, {"xx": "BE", "yy": 2}, {"xx": "FI", "yy": 1}, {"xx": "DE", "yy": 1}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_2d8f59299cd841b7874a9b6436ffc0bf.bindTooltip(
+                `<div>
+                     professeur: LI
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_55b019bbfe55423186ee45a2dca4d1ff = L.marker(
+                [58.595272, 25.713607],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_deae24f336b64e5c890e8d157a9834c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_796a28b2abb743e181673731a3c83b69 = $(`             <div id="vega_lite_796a28b2abb743e181673731a3c83b69"></div>             `)[0];
+            popup_deae24f336b64e5c890e8d157a9834c1.setContent(vega_lite_796a28b2abb743e181673731a3c83b69);
+        
+
+        marker_55b019bbfe55423186ee45a2dca4d1ff.bindPopup(popup_deae24f336b64e5c890e8d157a9834c1)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_796a28b2abb743e181673731a3c83b69, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur EE", "mark": "bar", "data": {"values": [{"xx": "PT", "yy": 9}, {"xx": "PL", "yy": 8}, {"xx": "CZ", "yy": 7}, {"xx": "DK", "yy": 6}, {"xx": "BE", "yy": 8}, {"xx": "AT", "yy": 10}, {"xx": "HU", "yy": 12}, {"xx": "NL", "yy": 5}, {"xx": "SI", "yy": 1}, {"xx": "IS", "yy": 1}, {"xx": "SK", "yy": 2}, {"xx": "UK", "yy": 18}, {"xx": "GR", "yy": 4}, {"xx": "RO", "yy": 1}, {"xx": "DE", "yy": 26}, {"xx": "EE", "yy": 6}, {"xx": "FI", "yy": 64}, {"xx": "LT", "yy": 21}, {"xx": "IT", "yy": 22}, {"xx": "LV", "yy": 25}, {"xx": "CY", "yy": 3}, {"xx": "FR", "yy": 14}, {"xx": "BG", "yy": 6}, {"xx": "ES", "yy": 9}, {"xx": "TR", "yy": 9}, {"xx": "SE", "yy": 6}, {"xx": "NO", "yy": 4}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_55b019bbfe55423186ee45a2dca4d1ff.bindTooltip(
+                `<div>
+                     professeur: EE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e2f626906c0493cb5e893223c9dd429 = L.marker(
+                [46.818188, 8.927512],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_ddd513f210aa4cf18f4171211bf4b441 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_bf39148d197c4264bb8f1d5078946638 = $(`             <div id="vega_lite_bf39148d197c4264bb8f1d5078946638"></div>             `)[0];
+            popup_ddd513f210aa4cf18f4171211bf4b441.setContent(vega_lite_bf39148d197c4264bb8f1d5078946638);
+        
+
+        marker_4e2f626906c0493cb5e893223c9dd429.bindPopup(popup_ddd513f210aa4cf18f4171211bf4b441)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_bf39148d197c4264bb8f1d5078946638, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur CH", "mark": "bar", "data": {"values": [{"xx": "PT", "yy": 6}, {"xx": "PL", "yy": 9}, {"xx": "CZ", "yy": 6}, {"xx": "ES", "yy": 17}, {"xx": "BE", "yy": 28}, {"xx": "AT", "yy": 22}, {"xx": "LT", "yy": 2}, {"xx": "NL", "yy": 8}, {"xx": "SK", "yy": 1}, {"xx": "UK", "yy": 7}, {"xx": "GR", "yy": 7}, {"xx": "RO", "yy": 10}, {"xx": "DE", "yy": 39}, {"xx": "HU", "yy": 3}, {"xx": "FI", "yy": 6}, {"xx": "EE", "yy": 3}, {"xx": "LV", "yy": 1}, {"xx": "FR", "yy": 40}, {"xx": "BG", "yy": 2}, {"xx": "DK", "yy": 5}, {"xx": "SE", "yy": 2}, {"xx": "IT", "yy": 24}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_4e2f626906c0493cb5e893223c9dd429.bindTooltip(
+                `<div>
+                     professeur: CH
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1dfd6968d72343589ba9be663386f5ab = L.marker(
+                [35.937496, 15.075415999999999],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_040e782807924ad6a77ddbefbaf5e681 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_c09fa4dddaf64be5ab366d28789e92ef = $(`             <div id="vega_lite_c09fa4dddaf64be5ab366d28789e92ef"></div>             `)[0];
+            popup_040e782807924ad6a77ddbefbaf5e681.setContent(vega_lite_c09fa4dddaf64be5ab366d28789e92ef);
+        
+
+        marker_1dfd6968d72343589ba9be663386f5ab.bindPopup(popup_040e782807924ad6a77ddbefbaf5e681)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_c09fa4dddaf64be5ab366d28789e92ef, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur MT", "mark": "bar", "data": {"values": [{"xx": "IE", "yy": 2}, {"xx": "PL", "yy": 2}, {"xx": "DE", "yy": 2}, {"xx": "CZ", "yy": 2}, {"xx": "DK", "yy": 1}, {"xx": "BE", "yy": 4}, {"xx": "FI", "yy": 2}, {"xx": "NO", "yy": 3}, {"xx": "HU", "yy": 1}, {"xx": "AT", "yy": 2}, {"xx": "LT", "yy": 1}, {"xx": "CY", "yy": 1}, {"xx": "FR", "yy": 2}, {"xx": "ES", "yy": 2}, {"xx": "TR", "yy": 2}, {"xx": "NL", "yy": 1}, {"xx": "SE", "yy": 1}, {"xx": "UK", "yy": 4}, {"xx": "IT", "yy": 8}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_1dfd6968d72343589ba9be663386f5ab.bindTooltip(
+                `<div>
+                     professeur: MT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b2429566c4c4b1f99698702af47ef6e = L.marker(
+                [61.92411, 26.448151],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_a39a037c1f4b4f8bbce4e846714643db = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_6a12a94a1aaa4e23ab8ed37ee62f31c1 = $(`             <div id="vega_lite_6a12a94a1aaa4e23ab8ed37ee62f31c1"></div>             `)[0];
+            popup_a39a037c1f4b4f8bbce4e846714643db.setContent(vega_lite_6a12a94a1aaa4e23ab8ed37ee62f31c1);
+        
+
+        marker_6b2429566c4c4b1f99698702af47ef6e.bindPopup(popup_a39a037c1f4b4f8bbce4e846714643db)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_6a12a94a1aaa4e23ab8ed37ee62f31c1, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur FI", "mark": "bar", "data": {"values": [{"xx": "PT", "yy": 46}, {"xx": "PL", "yy": 34}, {"xx": "CZ", "yy": 41}, {"xx": "DK", "yy": 13}, {"xx": "BE", "yy": 59}, {"xx": "NO", "yy": 16}, {"xx": "AT", "yy": 76}, {"xx": "HR", "yy": 3}, {"xx": "LT", "yy": 37}, {"xx": "NL", "yy": 47}, {"xx": "SI", "yy": 16}, {"xx": "SK", "yy": 11}, {"xx": "UK", "yy": 76}, {"xx": "SE", "yy": 27}, {"xx": "GR", "yy": 15}, {"xx": "RO", "yy": 9}, {"xx": "DE", "yy": 170}, {"xx": "LI", "yy": 2}, {"xx": "EE", "yy": 55}, {"xx": "CH", "yy": 13}, {"xx": "MT", "yy": 4}, {"xx": "FI", "yy": 21}, {"xx": "HU", "yy": 60}, {"xx": "IS", "yy": 12}, {"xx": "LV", "yy": 8}, {"xx": "CY", "yy": 4}, {"xx": "FR", "yy": 53}, {"xx": "BG", "yy": 4}, {"xx": "ES", "yy": 88}, {"xx": "TR", "yy": 21}, {"xx": "IE", "yy": 22}, {"xx": "IT", "yy": 48}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_6b2429566c4c4b1f99698702af47ef6e.bindTooltip(
+                `<div>
+                     professeur: FI
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_29ac12e88922440d953115e98ef611bd = L.marker(
+                [47.162494, 20.203304],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_8b5a0b8b2961488e9c103ba80d24f507 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_06f23abce46b474785bbcfcbb97a7e96 = $(`             <div id="vega_lite_06f23abce46b474785bbcfcbb97a7e96"></div>             `)[0];
+            popup_8b5a0b8b2961488e9c103ba80d24f507.setContent(vega_lite_06f23abce46b474785bbcfcbb97a7e96);
+        
+
+        marker_29ac12e88922440d953115e98ef611bd.bindPopup(popup_8b5a0b8b2961488e9c103ba80d24f507)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_06f23abce46b474785bbcfcbb97a7e96, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur HU", "mark": "bar", "data": {"values": [{"xx": "PT", "yy": 24}, {"xx": "PL", "yy": 62}, {"xx": "CZ", "yy": 32}, {"xx": "DK", "yy": 8}, {"xx": "BE", "yy": 24}, {"xx": "NO", "yy": 8}, {"xx": "UK", "yy": 24}, {"xx": "AT", "yy": 54}, {"xx": "HR", "yy": 7}, {"xx": "LT", "yy": 21}, {"xx": "NL", "yy": 21}, {"xx": "SI", "yy": 21}, {"xx": "SK", "yy": 73}, {"xx": "EE", "yy": 9}, {"xx": "SE", "yy": 2}, {"xx": "GR", "yy": 9}, {"xx": "RO", "yy": 156}, {"xx": "DE", "yy": 162}, {"xx": "CH", "yy": 3}, {"xx": "MT", "yy": 2}, {"xx": "FI", "yy": 44}, {"xx": "HU", "yy": 16}, {"xx": "IS", "yy": 1}, {"xx": "LV", "yy": 6}, {"xx": "CY", "yy": 3}, {"xx": "FR", "yy": 72}, {"xx": "BG", "yy": 14}, {"xx": "ES", "yy": 53}, {"xx": "TR", "yy": 45}, {"xx": "IE", "yy": 7}, {"xx": "IT", "yy": 87}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_29ac12e88922440d953115e98ef611bd.bindTooltip(
+                `<div>
+                     professeur: HU
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1185316d13b247a6ba20904877894b8c = L.marker(
+                [41.87194, 13.26738],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_4a466c02213e486495258943f64b25b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_cc9aee5867dd4c2d8ec71fe190f27063 = $(`             <div id="vega_lite_cc9aee5867dd4c2d8ec71fe190f27063"></div>             `)[0];
+            popup_4a466c02213e486495258943f64b25b8.setContent(vega_lite_cc9aee5867dd4c2d8ec71fe190f27063);
+        
+
+        marker_1185316d13b247a6ba20904877894b8c.bindPopup(popup_4a466c02213e486495258943f64b25b8)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_cc9aee5867dd4c2d8ec71fe190f27063, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur IT", "mark": "bar", "data": {"values": [{"xx": "PT", "yy": 88}, {"xx": "PL", "yy": 84}, {"xx": "CZ", "yy": 24}, {"xx": "DK", "yy": 13}, {"xx": "MT", "yy": 14}, {"xx": "NO", "yy": 16}, {"xx": "AT", "yy": 38}, {"xx": "HR", "yy": 8}, {"xx": "LT", "yy": 23}, {"xx": "NL", "yy": 24}, {"xx": "SI", "yy": 14}, {"xx": "SK", "yy": 10}, {"xx": "UK", "yy": 95}, {"xx": "IE", "yy": 11}, {"xx": "GR", "yy": 36}, {"xx": "RO", "yy": 61}, {"xx": "DE", "yy": 119}, {"xx": "CH", "yy": 14}, {"xx": "HU", "yy": 30}, {"xx": "FI", "yy": 28}, {"xx": "EE", "yy": 9}, {"xx": "IT", "yy": 31}, {"xx": "IS", "yy": 8}, {"xx": "LV", "yy": 19}, {"xx": "CY", "yy": 1}, {"xx": "FR", "yy": 242}, {"xx": "BG", "yy": 16}, {"xx": "ES", "yy": 404}, {"xx": "TR", "yy": 98}, {"xx": "SE", "yy": 33}, {"xx": "BE", "yy": 71}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_1185316d13b247a6ba20904877894b8c.bindTooltip(
+                `<div>
+                     professeur: IT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3b577b9dc53d4407910fafad5ec31eb9 = L.marker(
+                [64.963051, -18.320835000000002],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_c9162a31df2f4d4d9148aeeb99e8cefe = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_eaac944a1d6a4a68b6a4861b3c1bbd6c = $(`             <div id="vega_lite_eaac944a1d6a4a68b6a4861b3c1bbd6c"></div>             `)[0];
+            popup_c9162a31df2f4d4d9148aeeb99e8cefe.setContent(vega_lite_eaac944a1d6a4a68b6a4861b3c1bbd6c);
+        
+
+        marker_3b577b9dc53d4407910fafad5ec31eb9.bindPopup(popup_c9162a31df2f4d4d9148aeeb99e8cefe)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_eaac944a1d6a4a68b6a4861b3c1bbd6c, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur IS", "mark": "bar", "data": {"values": [{"xx": "PL", "yy": 2}, {"xx": "DE", "yy": 5}, {"xx": "CZ", "yy": 1}, {"xx": "ES", "yy": 4}, {"xx": "BE", "yy": 1}, {"xx": "FI", "yy": 6}, {"xx": "AT", "yy": 4}, {"xx": "LV", "yy": 1}, {"xx": "LT", "yy": 1}, {"xx": "IE", "yy": 2}, {"xx": "FR", "yy": 5}, {"xx": "DK", "yy": 5}, {"xx": "SE", "yy": 5}, {"xx": "UK", "yy": 4}, {"xx": "IT", "yy": 1}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_3b577b9dc53d4407910fafad5ec31eb9.bindTooltip(
+                `<div>
+                     professeur: IS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d1315d9596c4538b4932fd8438ed81c = L.marker(
+                [56.879635, 25.303189],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_d92e4bdcdc2e455e9381974ee3c66614 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_3986523797d5454090098bd18dbfb23a = $(`             <div id="vega_lite_3986523797d5454090098bd18dbfb23a"></div>             `)[0];
+            popup_d92e4bdcdc2e455e9381974ee3c66614.setContent(vega_lite_3986523797d5454090098bd18dbfb23a);
+        
+
+        marker_5d1315d9596c4538b4932fd8438ed81c.bindPopup(popup_d92e4bdcdc2e455e9381974ee3c66614)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_3986523797d5454090098bd18dbfb23a, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur LV", "mark": "bar", "data": {"values": [{"xx": "PT", "yy": 18}, {"xx": "PL", "yy": 60}, {"xx": "CZ", "yy": 16}, {"xx": "DK", "yy": 2}, {"xx": "BE", "yy": 17}, {"xx": "NO", "yy": 6}, {"xx": "AT", "yy": 5}, {"xx": "HR", "yy": 1}, {"xx": "HU", "yy": 3}, {"xx": "NL", "yy": 16}, {"xx": "SI", "yy": 4}, {"xx": "SK", "yy": 8}, {"xx": "UK", "yy": 2}, {"xx": "IE", "yy": 1}, {"xx": "GR", "yy": 7}, {"xx": "RO", "yy": 6}, {"xx": "DE", "yy": 32}, {"xx": "CH", "yy": 1}, {"xx": "MT", "yy": 3}, {"xx": "FI", "yy": 27}, {"xx": "EE", "yy": 44}, {"xx": "IS", "yy": 4}, {"xx": "LV", "yy": 10}, {"xx": "LT", "yy": 145}, {"xx": "BG", "yy": 14}, {"xx": "ES", "yy": 31}, {"xx": "TR", "yy": 19}, {"xx": "FR", "yy": 18}, {"xx": "SE", "yy": 13}, {"xx": "IT", "yy": 19}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_5d1315d9596c4538b4932fd8438ed81c.bindTooltip(
+                `<div>
+                     professeur: LV
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c43dc1209dda44ca92f11dac9bcd05d3 = L.marker(
+                [35.126413, 34.129859],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_9d5281956d7045f8920d2a8e2461c285 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_a13a372c94c547d9a76418e6065d45fb = $(`             <div id="vega_lite_a13a372c94c547d9a76418e6065d45fb"></div>             `)[0];
+            popup_9d5281956d7045f8920d2a8e2461c285.setContent(vega_lite_a13a372c94c547d9a76418e6065d45fb);
+        
+
+        marker_c43dc1209dda44ca92f11dac9bcd05d3.bindPopup(popup_9d5281956d7045f8920d2a8e2461c285)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_a13a372c94c547d9a76418e6065d45fb, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur CY", "mark": "bar", "data": {"values": [{"xx": "PT", "yy": 1}, {"xx": "DE", "yy": 5}, {"xx": "CZ", "yy": 2}, {"xx": "DK", "yy": 4}, {"xx": "MT", "yy": 1}, {"xx": "FI", "yy": 1}, {"xx": "AT", "yy": 2}, {"xx": "HU", "yy": 1}, {"xx": "BE", "yy": 1}, {"xx": "FR", "yy": 2}, {"xx": "BG", "yy": 1}, {"xx": "ES", "yy": 1}, {"xx": "UK", "yy": 6}, {"xx": "IT", "yy": 3}, {"xx": "GR", "yy": 15}, {"xx": "RO", "yy": 1}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_c43dc1209dda44ca92f11dac9bcd05d3.bindTooltip(
+                `<div>
+                     professeur: CY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1250320091e449ed8c8af58ed88e51d3 = L.marker(
+                [46.227638, 2.913749],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_386ae24fcfd74aa5a7a2d105b0c72d34 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_140f0be711144a11b056994a7029e558 = $(`             <div id="vega_lite_140f0be711144a11b056994a7029e558"></div>             `)[0];
+            popup_386ae24fcfd74aa5a7a2d105b0c72d34.setContent(vega_lite_140f0be711144a11b056994a7029e558);
+        
+
+        marker_1250320091e449ed8c8af58ed88e51d3.bindPopup(popup_386ae24fcfd74aa5a7a2d105b0c72d34)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_140f0be711144a11b056994a7029e558, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur FR", "mark": "bar", "data": {"values": [{"xx": "PT", "yy": 64}, {"xx": "PL", "yy": 180}, {"xx": "CZ", "yy": 112}, {"xx": "DK", "yy": 17}, {"xx": "BE", "yy": 78}, {"xx": "AT", "yy": 35}, {"xx": "HR", "yy": 12}, {"xx": "LT", "yy": 46}, {"xx": "NL", "yy": 23}, {"xx": "SI", "yy": 12}, {"xx": "IS", "yy": 5}, {"xx": "SK", "yy": 33}, {"xx": "LU", "yy": 1}, {"xx": "UK", "yy": 142}, {"xx": "IE", "yy": 44}, {"xx": "GR", "yy": 68}, {"xx": "RO", "yy": 253}, {"xx": "DE", "yy": 196}, {"xx": "EE", "yy": 8}, {"xx": "CH", "yy": 35}, {"xx": "MT", "yy": 5}, {"xx": "FI", "yy": 36}, {"xx": "HU", "yy": 71}, {"xx": "IT", "yy": 287}, {"xx": "LV", "yy": 21}, {"xx": "CY", "yy": 10}, {"xx": "FR", "yy": 46}, {"xx": "BG", "yy": 67}, {"xx": "ES", "yy": 317}, {"xx": "TR", "yy": 82}, {"xx": "SE", "yy": 43}, {"xx": "NO", "yy": 17}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_1250320091e449ed8c8af58ed88e51d3.bindTooltip(
+                `<div>
+                     professeur: FR
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e94e7ee5509e4e5ca54a8752c391da82 = L.marker(
+                [42.733883, 26.18583],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_cc7e0600a3f843d19bc0aec68b37100d = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_7572df959a314133994cd584bb4b4a36 = $(`             <div id="vega_lite_7572df959a314133994cd584bb4b4a36"></div>             `)[0];
+            popup_cc7e0600a3f843d19bc0aec68b37100d.setContent(vega_lite_7572df959a314133994cd584bb4b4a36);
+        
+
+        marker_e94e7ee5509e4e5ca54a8752c391da82.bindPopup(popup_cc7e0600a3f843d19bc0aec68b37100d)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_7572df959a314133994cd584bb4b4a36, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur BG", "mark": "bar", "data": {"values": [{"xx": "PT", "yy": 42}, {"xx": "PL", "yy": 57}, {"xx": "CZ", "yy": 34}, {"xx": "ES", "yy": 57}, {"xx": "BE", "yy": 26}, {"xx": "NO", "yy": 1}, {"xx": "AT", "yy": 22}, {"xx": "HR", "yy": 4}, {"xx": "LT", "yy": 15}, {"xx": "NL", "yy": 3}, {"xx": "SI", "yy": 5}, {"xx": "SK", "yy": 15}, {"xx": "UK", "yy": 42}, {"xx": "SE", "yy": 10}, {"xx": "GR", "yy": 35}, {"xx": "RO", "yy": 34}, {"xx": "DE", "yy": 66}, {"xx": "CH", "yy": 1}, {"xx": "HU", "yy": 21}, {"xx": "FI", "yy": 5}, {"xx": "EE", "yy": 9}, {"xx": "IS", "yy": 1}, {"xx": "LV", "yy": 27}, {"xx": "CY", "yy": 2}, {"xx": "FR", "yy": 66}, {"xx": "DK", "yy": 6}, {"xx": "TR", "yy": 83}, {"xx": "IE", "yy": 6}, {"xx": "IT", "yy": 41}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_e94e7ee5509e4e5ca54a8752c391da82.bindTooltip(
+                `<div>
+                     professeur: BG
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6e1920fc394447969e9ca873bfc30745 = L.marker(
+                [40.463667, -3.04922],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_32819d9f06844e2ab7b8f1b9c015d4d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_06e63316d48149be9132aa301f44d74f = $(`             <div id="vega_lite_06e63316d48149be9132aa301f44d74f"></div>             `)[0];
+            popup_32819d9f06844e2ab7b8f1b9c015d4d8.setContent(vega_lite_06e63316d48149be9132aa301f44d74f);
+        
+
+        marker_6e1920fc394447969e9ca873bfc30745.bindPopup(popup_32819d9f06844e2ab7b8f1b9c015d4d8)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_06e63316d48149be9132aa301f44d74f, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur ES", "mark": "bar", "data": {"values": [{"xx": "PT", "yy": 474}, {"xx": "PL", "yy": 173}, {"xx": "CZ", "yy": 65}, {"xx": "ES", "yy": 12}, {"xx": "BE", "yy": 144}, {"xx": "AT", "yy": 61}, {"xx": "HR", "yy": 9}, {"xx": "HU", "yy": 51}, {"xx": "NL", "yy": 57}, {"xx": "SI", "yy": 18}, {"xx": "IS", "yy": 6}, {"xx": "SK", "yy": 20}, {"xx": "LU", "yy": 1}, {"xx": "UK", "yy": 224}, {"xx": "SE", "yy": 40}, {"xx": "GR", "yy": 37}, {"xx": "RO", "yy": 66}, {"xx": "DE", "yy": 288}, {"xx": "EE", "yy": 12}, {"xx": "CH", "yy": 19}, {"xx": "MT", "yy": 9}, {"xx": "FI", "yy": 66}, {"xx": "LT", "yy": 21}, {"xx": "IT", "yy": 734}, {"xx": "LV", "yy": 27}, {"xx": "CY", "yy": 4}, {"xx": "FR", "yy": 424}, {"xx": "BG", "yy": 16}, {"xx": "DK", "yy": 50}, {"xx": "TR", "yy": 74}, {"xx": "IE", "yy": 27}, {"xx": "NO", "yy": 21}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_6e1920fc394447969e9ca873bfc30745.bindTooltip(
+                `<div>
+                     professeur: ES
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_50233ff4cb324c55b794e7804aec11f5 = L.marker(
+                [38.963745, 35.943322],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_276b51aa0c624d0e895daab24e834a83 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_5da5f50e4aad4e45bfb0b24cdea1b799 = $(`             <div id="vega_lite_5da5f50e4aad4e45bfb0b24cdea1b799"></div>             `)[0];
+            popup_276b51aa0c624d0e895daab24e834a83.setContent(vega_lite_5da5f50e4aad4e45bfb0b24cdea1b799);
+        
+
+        marker_50233ff4cb324c55b794e7804aec11f5.bindPopup(popup_276b51aa0c624d0e895daab24e834a83)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_5da5f50e4aad4e45bfb0b24cdea1b799, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur TR", "mark": "bar", "data": {"values": [{"xx": "PT", "yy": 96}, {"xx": "PL", "yy": 255}, {"xx": "CZ", "yy": 115}, {"xx": "ES", "yy": 152}, {"xx": "BE", "yy": 38}, {"xx": "AT", "yy": 52}, {"xx": "HU", "yy": 96}, {"xx": "NL", "yy": 41}, {"xx": "SI", "yy": 37}, {"xx": "SK", "yy": 26}, {"xx": "UK", "yy": 50}, {"xx": "SE", "yy": 30}, {"xx": "GR", "yy": 46}, {"xx": "RO", "yy": 109}, {"xx": "DE", "yy": 195}, {"xx": "EE", "yy": 20}, {"xx": "FI", "yy": 38}, {"xx": "LT", "yy": 104}, {"xx": "LV", "yy": 37}, {"xx": "FR", "yy": 52}, {"xx": "BG", "yy": 40}, {"xx": "DK", "yy": 34}, {"xx": "TR", "yy": 11}, {"xx": "IE", "yy": 6}, {"xx": "IT", "yy": 178}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_50233ff4cb324c55b794e7804aec11f5.bindTooltip(
+                `<div>
+                     professeur: TR
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_23de3dd30ace4875a10b789cd90bd4a5 = L.marker(
+                [60.128161, 19.343501],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_8f6fc5c438904745ab61beeb6291abdd = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_c25a062a05cf472d922f294d7de2a73e = $(`             <div id="vega_lite_c25a062a05cf472d922f294d7de2a73e"></div>             `)[0];
+            popup_8f6fc5c438904745ab61beeb6291abdd.setContent(vega_lite_c25a062a05cf472d922f294d7de2a73e);
+        
+
+        marker_23de3dd30ace4875a10b789cd90bd4a5.bindPopup(popup_8f6fc5c438904745ab61beeb6291abdd)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_c25a062a05cf472d922f294d7de2a73e, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur SE", "mark": "bar", "data": {"values": [{"xx": "PT", "yy": 19}, {"xx": "PL", "yy": 23}, {"xx": "CZ", "yy": 11}, {"xx": "ES", "yy": 54}, {"xx": "NO", "yy": 17}, {"xx": "AT", "yy": 25}, {"xx": "HR", "yy": 8}, {"xx": "HU", "yy": 19}, {"xx": "NL", "yy": 21}, {"xx": "SI", "yy": 2}, {"xx": "IS", "yy": 9}, {"xx": "SK", "yy": 3}, {"xx": "UK", "yy": 44}, {"xx": "GR", "yy": 15}, {"xx": "RO", "yy": 2}, {"xx": "DE", "yy": 71}, {"xx": "EE", "yy": 6}, {"xx": "CH", "yy": 5}, {"xx": "MT", "yy": 2}, {"xx": "FI", "yy": 20}, {"xx": "LT", "yy": 17}, {"xx": "IT", "yy": 40}, {"xx": "LV", "yy": 8}, {"xx": "FR", "yy": 30}, {"xx": "BG", "yy": 4}, {"xx": "DK", "yy": 16}, {"xx": "TR", "yy": 14}, {"xx": "IE", "yy": 3}, {"xx": "BE", "yy": 27}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_23de3dd30ace4875a10b789cd90bd4a5.bindTooltip(
+                `<div>
+                     professeur: SE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b37c1c61a64a40d3acde8405b59f3f13 = L.marker(
+                [60.472023, 9.168946],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_4851430db8f74c92bbe5f87a8c295cd9 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_6ed2dc234fdc47cbad009928d124bd65 = $(`             <div id="vega_lite_6ed2dc234fdc47cbad009928d124bd65"></div>             `)[0];
+            popup_4851430db8f74c92bbe5f87a8c295cd9.setContent(vega_lite_6ed2dc234fdc47cbad009928d124bd65);
+        
+
+        marker_b37c1c61a64a40d3acde8405b59f3f13.bindPopup(popup_4851430db8f74c92bbe5f87a8c295cd9)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_6ed2dc234fdc47cbad009928d124bd65, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "yy"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "xx"}}, "title": "Erasmus data professeur NO", "mark": "bar", "data": {"values": [{"xx": "PT", "yy": 25}, {"xx": "PL", "yy": 14}, {"xx": "CZ", "yy": 14}, {"xx": "DK", "yy": 16}, {"xx": "MT", "yy": 9}, {"xx": "BE", "yy": 21}, {"xx": "AT", "yy": 18}, {"xx": "LT", "yy": 8}, {"xx": "NL", "yy": 24}, {"xx": "SI", "yy": 16}, {"xx": "SK", "yy": 4}, {"xx": "UK", "yy": 46}, {"xx": "SE", "yy": 27}, {"xx": "GR", "yy": 5}, {"xx": "RO", "yy": 1}, {"xx": "DE", "yy": 48}, {"xx": "HU", "yy": 3}, {"xx": "FI", "yy": 16}, {"xx": "EE", "yy": 8}, {"xx": "IT", "yy": 17}, {"xx": "LV", "yy": 9}, {"xx": "FR", "yy": 12}, {"xx": "BG", "yy": 2}, {"xx": "ES", "yy": 14}, {"xx": "IE", "yy": 14}, {"xx": "NO", "yy": 18}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_b37c1c61a64a40d3acde8405b59f3f13.bindTooltip(
+                `<div>
+                     professeur: NO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_93a99e5749a84df38ee20b9b315cec79 = L.marker(
+                [39.399872, -8.224454],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_32d0f33bb02f458aa6f52a02cf1b4b83 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_f2f113afdc7e4160b774b65ac26d7b2c = $(`             <div id="vega_lite_f2f113afdc7e4160b774b65ac26d7b2c"></div>             `)[0];
+            popup_32d0f33bb02f458aa6f52a02cf1b4b83.setContent(vega_lite_f2f113afdc7e4160b774b65ac26d7b2c);
+        
+
+        marker_93a99e5749a84df38ee20b9b315cec79.bindPopup(popup_32d0f33bb02f458aa6f52a02cf1b4b83)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_f2f113afdc7e4160b774b65ac26d7b2c, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves PT", "mark": "bar", "data": {"values": [{"y": 756, "x": "PL"}, {"y": 370, "x": "CZ"}, {"y": 1600, "x": "ES"}, {"y": 50, "x": "NO"}, {"y": 90, "x": "AT"}, {"y": 11, "x": "HR"}, {"y": 169, "x": "HU"}, {"y": 21, "x": "IE"}, {"y": 232, "x": "NL"}, {"y": 143, "x": "SI"}, {"y": 3, "x": "IS"}, {"y": 77, "x": "SK"}, {"y": 278, "x": "UK"}, {"y": 6, "x": "LU"}, {"y": 37, "x": "GR"}, {"y": 137, "x": "RO"}, {"y": 339, "x": "DE"}, {"y": 2, "x": "LI"}, {"y": 3, "x": "CY"}, {"y": 79, "x": "CH"}, {"y": 17, "x": "MT"}, {"y": 114, "x": "FI"}, {"y": 33, "x": "EE"}, {"y": 849, "x": "IT"}, {"y": 20, "x": "LV"}, {"y": 105, "x": "LT"}, {"y": 322, "x": "FR"}, {"y": 31, "x": "BG"}, {"y": 104, "x": "DK"}, {"y": 82, "x": "TR"}, {"y": 117, "x": "SE"}, {"y": 273, "x": "BE"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_93a99e5749a84df38ee20b9b315cec79.bindTooltip(
+                `<div>
+                     students: PT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0c78b4a64ba24df9a3d56260367d2620 = L.marker(
+                [51.919438, 19.145136],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_58ec3bb571e641bca3a87a3423a68d29 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_d970cd79d1c54db1804cc263711030cd = $(`             <div id="vega_lite_d970cd79d1c54db1804cc263711030cd"></div>             `)[0];
+            popup_58ec3bb571e641bca3a87a3423a68d29.setContent(vega_lite_d970cd79d1c54db1804cc263711030cd);
+        
+
+        marker_0c78b4a64ba24df9a3d56260367d2620.bindPopup(popup_58ec3bb571e641bca3a87a3423a68d29)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_d970cd79d1c54db1804cc263711030cd, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves PL", "mark": "bar", "data": {"values": [{"y": 1175, "x": "PT"}, {"y": 516, "x": "CZ"}, {"y": 471, "x": "DK"}, {"y": 73, "x": "MT"}, {"y": 455, "x": "BE"}, {"y": 313, "x": "AT"}, {"y": 67, "x": "HR"}, {"y": 156, "x": "LT"}, {"y": 464, "x": "NL"}, {"y": 165, "x": "SI"}, {"y": 29, "x": "IS"}, {"y": 302, "x": "SK"}, {"y": 8, "x": "LU"}, {"y": 801, "x": "UK"}, {"y": 89, "x": "IE"}, {"y": 373, "x": "GR"}, {"y": 71, "x": "RO"}, {"y": 2224, "x": "DE"}, {"y": 5, "x": "LI"}, {"y": 79, "x": "CH"}, {"y": 249, "x": "HU"}, {"y": 297, "x": "FI"}, {"y": 65, "x": "EE"}, {"y": 1316, "x": "IT"}, {"y": 82, "x": "LV"}, {"y": 65, "x": "CY"}, {"y": 1253, "x": "FR"}, {"y": 235, "x": "BG"}, {"y": 2715, "x": "ES"}, {"y": 642, "x": "TR"}, {"y": 340, "x": "SE"}, {"y": 188, "x": "NO"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_0c78b4a64ba24df9a3d56260367d2620.bindTooltip(
+                `<div>
+                     students: PL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1fa8d958801f44e9a42ea43251863644 = L.marker(
+                [49.817492, 15.472962000000003],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_f402dbfda5854d81af993646d8d1f56e = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_d7f18711e38f463788ac54fb79acd12f = $(`             <div id="vega_lite_d7f18711e38f463788ac54fb79acd12f"></div>             `)[0];
+            popup_f402dbfda5854d81af993646d8d1f56e.setContent(vega_lite_d7f18711e38f463788ac54fb79acd12f);
+        
+
+        marker_1fa8d958801f44e9a42ea43251863644.bindPopup(popup_f402dbfda5854d81af993646d8d1f56e)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_d7f18711e38f463788ac54fb79acd12f, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves CZ", "mark": "bar", "data": {"values": [{"y": 372, "x": "PT"}, {"y": 168, "x": "PL"}, {"y": 207, "x": "DK"}, {"y": 21, "x": "MT"}, {"y": 276, "x": "BE"}, {"y": 352, "x": "AT"}, {"y": 23, "x": "HR"}, {"y": 64, "x": "LT"}, {"y": 253, "x": "NL"}, {"y": 174, "x": "SI"}, {"y": 29, "x": "IS"}, {"y": 123, "x": "SK"}, {"y": 9, "x": "LU"}, {"y": 552, "x": "UK"}, {"y": 236, "x": "SE"}, {"y": 164, "x": "GR"}, {"y": 8, "x": "RO"}, {"y": 1046, "x": "DE"}, {"y": 6, "x": "LI"}, {"y": 92, "x": "CH"}, {"y": 44, "x": "HU"}, {"y": 381, "x": "FI"}, {"y": 52, "x": "EE"}, {"y": 259, "x": "IT"}, {"y": 36, "x": "LV"}, {"y": 21, "x": "CY"}, {"y": 805, "x": "FR"}, {"y": 30, "x": "BG"}, {"y": 720, "x": "ES"}, {"y": 181, "x": "TR"}, {"y": 102, "x": "IE"}, {"y": 196, "x": "NO"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_1fa8d958801f44e9a42ea43251863644.bindTooltip(
+                `<div>
+                     students: CZ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c4b5b297c8ce4d31b3fc62dc7cdf7f0c = L.marker(
+                [40.463667, -3.74922],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_46324e966e974b418c25a94742f679f3 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_95f4951306a6464491b88aab96447212 = $(`             <div id="vega_lite_95f4951306a6464491b88aab96447212"></div>             `)[0];
+            popup_46324e966e974b418c25a94742f679f3.setContent(vega_lite_95f4951306a6464491b88aab96447212);
+        
+
+        marker_c4b5b297c8ce4d31b3fc62dc7cdf7f0c.bindPopup(popup_46324e966e974b418c25a94742f679f3)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_95f4951306a6464491b88aab96447212, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves ES", "mark": "bar", "data": {"values": [{"y": 2606, "x": "PT"}, {"y": 2493, "x": "PL"}, {"y": 948, "x": "CZ"}, {"y": 1882, "x": "BE"}, {"y": 663, "x": "AT"}, {"y": 23, "x": "HR"}, {"y": 248, "x": "LT"}, {"y": 1488, "x": "NL"}, {"y": 246, "x": "SI"}, {"y": 61, "x": "IS"}, {"y": 190, "x": "SK"}, {"y": 15, "x": "LU"}, {"y": 4170, "x": "UK"}, {"y": 1095, "x": "SE"}, {"y": 342, "x": "GR"}, {"y": 304, "x": "RO"}, {"y": 4609, "x": "DE"}, {"y": 7, "x": "LI"}, {"y": 79, "x": "EE"}, {"y": 374, "x": "CH"}, {"y": 213, "x": "MT"}, {"y": 922, "x": "FI"}, {"y": 374, "x": "HU"}, {"y": 8267, "x": "IT"}, {"y": 132, "x": "LV"}, {"y": 70, "x": "CY"}, {"y": 4744, "x": "FR"}, {"y": 155, "x": "BG"}, {"y": 933, "x": "DK"}, {"y": 311, "x": "TR"}, {"y": 1010, "x": "IE"}, {"y": 545, "x": "NO"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_c4b5b297c8ce4d31b3fc62dc7cdf7f0c.bindTooltip(
+                `<div>
+                     students: ES
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_01af55634d8847bd8c45619631d0f76a = L.marker(
+                [50.503887, 4.469936],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_2135f0f5a96b4265aebf2bf2c555e2e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_5645f287d10143d8a24e1b18851cd2ff = $(`             <div id="vega_lite_5645f287d10143d8a24e1b18851cd2ff"></div>             `)[0];
+            popup_2135f0f5a96b4265aebf2bf2c555e2e7.setContent(vega_lite_5645f287d10143d8a24e1b18851cd2ff);
+        
+
+        marker_01af55634d8847bd8c45619631d0f76a.bindPopup(popup_2135f0f5a96b4265aebf2bf2c555e2e7)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_5645f287d10143d8a24e1b18851cd2ff, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves BE", "mark": "bar", "data": {"values": [{"y": 272, "x": "PT"}, {"y": 105, "x": "PL"}, {"y": 109, "x": "CZ"}, {"y": 1510, "x": "ES"}, {"y": 129, "x": "NO"}, {"y": 154, "x": "AT"}, {"y": 7, "x": "HR"}, {"y": 106, "x": "HU"}, {"y": 391, "x": "NL"}, {"y": 40, "x": "SI"}, {"y": 8, "x": "IS"}, {"y": 1, "x": "SK"}, {"y": 621, "x": "UK"}, {"y": 158, "x": "IE"}, {"y": 43, "x": "GR"}, {"y": 49, "x": "RO"}, {"y": 497, "x": "DE"}, {"y": 1, "x": "LI"}, {"y": 25, "x": "EE"}, {"y": 182, "x": "CH"}, {"y": 52, "x": "MT"}, {"y": 274, "x": "FI"}, {"y": 40, "x": "LT"}, {"y": 114, "x": "LU"}, {"y": 12, "x": "LV"}, {"y": 18, "x": "CY"}, {"y": 1102, "x": "FR"}, {"y": 14, "x": "BG"}, {"y": 217, "x": "DK"}, {"y": 135, "x": "TR"}, {"y": 264, "x": "SE"}, {"y": 435, "x": "IT"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_01af55634d8847bd8c45619631d0f76a.bindTooltip(
+                `<div>
+                     students: BE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_033b0f80cb414505910b8ad775b39e32 = L.marker(
+                [60.128161, 18.643501],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_73cf6adee4064409b871e6b5db185e3d = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_f08517ead140448fa43d33956b6afe49 = $(`             <div id="vega_lite_f08517ead140448fa43d33956b6afe49"></div>             `)[0];
+            popup_73cf6adee4064409b871e6b5db185e3d.setContent(vega_lite_f08517ead140448fa43d33956b6afe49);
+        
+
+        marker_033b0f80cb414505910b8ad775b39e32.bindPopup(popup_73cf6adee4064409b871e6b5db185e3d)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_f08517ead140448fa43d33956b6afe49, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves SE", "mark": "bar", "data": {"values": [{"y": 63, "x": "PT"}, {"y": 28, "x": "PL"}, {"y": 71, "x": "CZ"}, {"y": 98, "x": "DK"}, {"y": 106, "x": "BE"}, {"y": 144, "x": "AT"}, {"y": 4, "x": "HR"}, {"y": 3, "x": "LT"}, {"y": 316, "x": "NL"}, {"y": 8, "x": "SI"}, {"y": 12, "x": "IS"}, {"y": 1, "x": "SK"}, {"y": 627, "x": "UK"}, {"y": 1, "x": "LU"}, {"y": 25, "x": "GR"}, {"y": 4, "x": "RO"}, {"y": 465, "x": "DE"}, {"y": 9, "x": "EE"}, {"y": 188, "x": "CH"}, {"y": 7, "x": "MT"}, {"y": 36, "x": "FI"}, {"y": 29, "x": "HU"}, {"y": 179, "x": "IT"}, {"y": 2, "x": "LV"}, {"y": 4, "x": "CY"}, {"y": 573, "x": "FR"}, {"y": 359, "x": "ES"}, {"y": 61, "x": "TR"}, {"y": 96, "x": "IE"}, {"y": 54, "x": "NO"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_033b0f80cb414505910b8ad775b39e32.bindTooltip(
+                `<div>
+                     students: SE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6c4d117d0d9416aa8868839a21b3358 = L.marker(
+                [47.516231, 14.550072],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_bcbae00cf8ad44c684012923a5e5523e = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_71e12a9641f44f7e86f4961f8d18b288 = $(`             <div id="vega_lite_71e12a9641f44f7e86f4961f8d18b288"></div>             `)[0];
+            popup_bcbae00cf8ad44c684012923a5e5523e.setContent(vega_lite_71e12a9641f44f7e86f4961f8d18b288);
+        
+
+        marker_a6c4d117d0d9416aa8868839a21b3358.bindPopup(popup_bcbae00cf8ad44c684012923a5e5523e)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_71e12a9641f44f7e86f4961f8d18b288, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves AT", "mark": "bar", "data": {"values": [{"y": 117, "x": "PT"}, {"y": 48, "x": "PL"}, {"y": 96, "x": "CZ"}, {"y": 207, "x": "DK"}, {"y": 154, "x": "NO"}, {"y": 42, "x": "HR"}, {"y": 46, "x": "HU"}, {"y": 17, "x": "LT"}, {"y": 282, "x": "NL"}, {"y": 36, "x": "SI"}, {"y": 16, "x": "SK"}, {"y": 8, "x": "LU"}, {"y": 454, "x": "UK"}, {"y": 420, "x": "SE"}, {"y": 22, "x": "GR"}, {"y": 10, "x": "RO"}, {"y": 903, "x": "DE"}, {"y": 5, "x": "LI"}, {"y": 5, "x": "CY"}, {"y": 195, "x": "CH"}, {"y": 18, "x": "MT"}, {"y": 265, "x": "FI"}, {"y": 35, "x": "EE"}, {"y": 31, "x": "IS"}, {"y": 6, "x": "LV"}, {"y": 115, "x": "BE"}, {"y": 592, "x": "FR"}, {"y": 8, "x": "BG"}, {"y": 799, "x": "ES"}, {"y": 120, "x": "TR"}, {"y": 176, "x": "IE"}, {"y": 341, "x": "IT"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_a6c4d117d0d9416aa8868839a21b3358.bindTooltip(
+                `<div>
+                     students: AT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a444d17e104842cda00f068e0787ebb9 = L.marker(
+                [45.1, 15.2],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_57437e3bed8543d9a6703d246cbaa0b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_27eeb425e70444b8924220131e4e58d0 = $(`             <div id="vega_lite_27eeb425e70444b8924220131e4e58d0"></div>             `)[0];
+            popup_57437e3bed8543d9a6703d246cbaa0b9.setContent(vega_lite_27eeb425e70444b8924220131e4e58d0);
+        
+
+        marker_a444d17e104842cda00f068e0787ebb9.bindPopup(popup_57437e3bed8543d9a6703d246cbaa0b9)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_27eeb425e70444b8924220131e4e58d0, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves HR", "mark": "bar", "data": {"values": [{"y": 50, "x": "PT"}, {"y": 51, "x": "PL"}, {"y": 42, "x": "CZ"}, {"y": 6, "x": "DK"}, {"y": 19, "x": "BE"}, {"y": 128, "x": "AT"}, {"y": 5, "x": "LT"}, {"y": 13, "x": "NL"}, {"y": 91, "x": "SI"}, {"y": 8, "x": "SK"}, {"y": 30, "x": "UK"}, {"y": 10, "x": "IE"}, {"y": 1, "x": "GR"}, {"y": 5, "x": "RO"}, {"y": 96, "x": "DE"}, {"y": 2, "x": "EE"}, {"y": 3, "x": "MT"}, {"y": 5, "x": "FI"}, {"y": 32, "x": "HU"}, {"y": 1, "x": "LU"}, {"y": 4, "x": "CY"}, {"y": 52, "x": "FR"}, {"y": 4, "x": "BG"}, {"y": 84, "x": "ES"}, {"y": 22, "x": "SE"}, {"y": 117, "x": "IT"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_a444d17e104842cda00f068e0787ebb9.bindTooltip(
+                `<div>
+                     students: HR
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0c478438fffa40ffbaaf83154d99be7d = L.marker(
+                [47.162494, 19.503304],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_04454a23f0e64e928beb218d76e2a978 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_c8a3243a862744f0be0d2e10e7dcde11 = $(`             <div id="vega_lite_c8a3243a862744f0be0d2e10e7dcde11"></div>             `)[0];
+            popup_04454a23f0e64e928beb218d76e2a978.setContent(vega_lite_c8a3243a862744f0be0d2e10e7dcde11);
+        
+
+        marker_0c478438fffa40ffbaaf83154d99be7d.bindPopup(popup_04454a23f0e64e928beb218d76e2a978)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_c8a3243a862744f0be0d2e10e7dcde11, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves HU", "mark": "bar", "data": {"values": [{"y": 158, "x": "PT"}, {"y": 167, "x": "PL"}, {"y": 83, "x": "CZ"}, {"y": 60, "x": "DK"}, {"y": 243, "x": "BE"}, {"y": 220, "x": "AT"}, {"y": 10, "x": "HR"}, {"y": 26, "x": "LT"}, {"y": 284, "x": "NL"}, {"y": 46, "x": "SI"}, {"y": 6, "x": "IS"}, {"y": 27, "x": "SK"}, {"y": 4, "x": "LU"}, {"y": 203, "x": "UK"}, {"y": 46, "x": "IE"}, {"y": 60, "x": "GR"}, {"y": 67, "x": "RO"}, {"y": 1005, "x": "DE"}, {"y": 4, "x": "LI"}, {"y": 37, "x": "CH"}, {"y": 10, "x": "MT"}, {"y": 173, "x": "FI"}, {"y": 34, "x": "EE"}, {"y": 352, "x": "IT"}, {"y": 9, "x": "LV"}, {"y": 18, "x": "CY"}, {"y": 379, "x": "FR"}, {"y": 10, "x": "BG"}, {"y": 382, "x": "ES"}, {"y": 103, "x": "TR"}, {"y": 82, "x": "SE"}, {"y": 51, "x": "NO"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_0c478438fffa40ffbaaf83154d99be7d.bindTooltip(
+                `<div>
+                     students: HU
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bf6001040b364e158ec4ee652851db47 = L.marker(
+                [52.132633, 5.291266],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_d1b886b10efd4750b70d87d441afe3fa = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_fe1c4069d7fb4a518bf92835df9d0144 = $(`             <div id="vega_lite_fe1c4069d7fb4a518bf92835df9d0144"></div>             `)[0];
+            popup_d1b886b10efd4750b70d87d441afe3fa.setContent(vega_lite_fe1c4069d7fb4a518bf92835df9d0144);
+        
+
+        marker_bf6001040b364e158ec4ee652851db47.bindPopup(popup_d1b886b10efd4750b70d87d441afe3fa)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_fe1c4069d7fb4a518bf92835df9d0144, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves NL", "mark": "bar", "data": {"values": [{"y": 191, "x": "PT"}, {"y": 88, "x": "PL"}, {"y": 660, "x": "BE"}, {"y": 1575, "x": "ES"}, {"y": 298, "x": "NO"}, {"y": 225, "x": "AT"}, {"y": 3, "x": "HR"}, {"y": 147, "x": "HU"}, {"y": 18, "x": "SI"}, {"y": 6, "x": "SK"}, {"y": 88, "x": "CZ"}, {"y": 6, "x": "LU"}, {"y": 1499, "x": "UK"}, {"y": 620, "x": "SE"}, {"y": 60, "x": "GR"}, {"y": 24, "x": "RO"}, {"y": 1026, "x": "DE"}, {"y": 2, "x": "LI"}, {"y": 7, "x": "CY"}, {"y": 163, "x": "CH"}, {"y": 49, "x": "MT"}, {"y": 333, "x": "FI"}, {"y": 33, "x": "EE"}, {"y": 23, "x": "IS"}, {"y": 16, "x": "LV"}, {"y": 24, "x": "LT"}, {"y": 756, "x": "FR"}, {"y": 29, "x": "BG"}, {"y": 340, "x": "DK"}, {"y": 436, "x": "TR"}, {"y": 188, "x": "IE"}, {"y": 376, "x": "IT"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_bf6001040b364e158ec4ee652851db47.bindTooltip(
+                `<div>
+                     students: NL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f2a963a87c64c218fead35854cd1737 = L.marker(
+                [46.151241, 14.995463],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_a2266fcc5a2e45faa3e15b4c76aa5c27 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_bb66ec500b7f43eeb3ca6c8beae7ee90 = $(`             <div id="vega_lite_bb66ec500b7f43eeb3ca6c8beae7ee90"></div>             `)[0];
+            popup_a2266fcc5a2e45faa3e15b4c76aa5c27.setContent(vega_lite_bb66ec500b7f43eeb3ca6c8beae7ee90);
+        
+
+        marker_4f2a963a87c64c218fead35854cd1737.bindPopup(popup_a2266fcc5a2e45faa3e15b4c76aa5c27)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_bb66ec500b7f43eeb3ca6c8beae7ee90, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves SI", "mark": "bar", "data": {"values": [{"y": 155, "x": "PT"}, {"y": 50, "x": "PL"}, {"y": 89, "x": "CZ"}, {"y": 326, "x": "ES"}, {"y": 49, "x": "BE"}, {"y": 29, "x": "NO"}, {"y": 108, "x": "AT"}, {"y": 38, "x": "HR"}, {"y": 13, "x": "LT"}, {"y": 55, "x": "NL"}, {"y": 15, "x": "SK"}, {"y": 75, "x": "UK"}, {"y": 39, "x": "SE"}, {"y": 23, "x": "GR"}, {"y": 1, "x": "RO"}, {"y": 276, "x": "DE"}, {"y": 1, "x": "LI"}, {"y": 5, "x": "EE"}, {"y": 17, "x": "CH"}, {"y": 9, "x": "MT"}, {"y": 51, "x": "FI"}, {"y": 13, "x": "HU"}, {"y": 6, "x": "IS"}, {"y": 4, "x": "LV"}, {"y": 3, "x": "CY"}, {"y": 114, "x": "FR"}, {"y": 6, "x": "BG"}, {"y": 36, "x": "DK"}, {"y": 46, "x": "TR"}, {"y": 15, "x": "IE"}, {"y": 64, "x": "IT"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_4f2a963a87c64c218fead35854cd1737.bindTooltip(
+                `<div>
+                     students: SI
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c8861cafa70e40a5b648e5239088e731 = L.marker(
+                [48.669026, 19.699024],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_ed556da5d9fa40b18b0f8ba96cbe8d51 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_2d0fb4de6240487ab977641515e5c3e6 = $(`             <div id="vega_lite_2d0fb4de6240487ab977641515e5c3e6"></div>             `)[0];
+            popup_ed556da5d9fa40b18b0f8ba96cbe8d51.setContent(vega_lite_2d0fb4de6240487ab977641515e5c3e6);
+        
+
+        marker_c8861cafa70e40a5b648e5239088e731.bindPopup(popup_ed556da5d9fa40b18b0f8ba96cbe8d51)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_2d0fb4de6240487ab977641515e5c3e6, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves SK", "mark": "bar", "data": {"values": [{"y": 119, "x": "PT"}, {"y": 166, "x": "PL"}, {"y": 499, "x": "CZ"}, {"y": 295, "x": "ES"}, {"y": 45, "x": "NO"}, {"y": 102, "x": "AT"}, {"y": 13, "x": "HR"}, {"y": 60, "x": "HU"}, {"y": 70, "x": "NL"}, {"y": 45, "x": "SI"}, {"y": 2, "x": "LU"}, {"y": 84, "x": "UK"}, {"y": 13, "x": "IE"}, {"y": 35, "x": "GR"}, {"y": 9, "x": "RO"}, {"y": 347, "x": "DE"}, {"y": 4, "x": "CY"}, {"y": 12, "x": "EE"}, {"y": 5, "x": "CH"}, {"y": 28, "x": "MT"}, {"y": 98, "x": "FI"}, {"y": 20, "x": "LT"}, {"y": 11, "x": "IS"}, {"y": 15, "x": "LV"}, {"y": 90, "x": "BE"}, {"y": 225, "x": "FR"}, {"y": 3, "x": "BG"}, {"y": 50, "x": "DK"}, {"y": 40, "x": "TR"}, {"y": 50, "x": "SE"}, {"y": 129, "x": "IT"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_c8861cafa70e40a5b648e5239088e731.bindTooltip(
+                `<div>
+                     students: SK
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_741c3b703d044a598bb7cc0b5021ebb5 = L.marker(
+                [55.378052, -3.4359730000000006],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_095dfcbb1e1648fd963c5d68939489e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_47ff884cc9b44877a227f9ed2554c0f0 = $(`             <div id="vega_lite_47ff884cc9b44877a227f9ed2554c0f0"></div>             `)[0];
+            popup_095dfcbb1e1648fd963c5d68939489e0.setContent(vega_lite_47ff884cc9b44877a227f9ed2554c0f0);
+        
+
+        marker_741c3b703d044a598bb7cc0b5021ebb5.bindPopup(popup_095dfcbb1e1648fd963c5d68939489e0)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_47ff884cc9b44877a227f9ed2554c0f0, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves UK", "mark": "bar", "data": {"values": [{"y": 126, "x": "PT"}, {"y": 75, "x": "PL"}, {"y": 172, "x": "CZ"}, {"y": 230, "x": "DK"}, {"y": 259, "x": "BE"}, {"y": 252, "x": "AT"}, {"y": 2, "x": "HR"}, {"y": 47, "x": "HU"}, {"y": 582, "x": "NL"}, {"y": 14, "x": "SI"}, {"y": 9, "x": "SK"}, {"y": 24, "x": "LU"}, {"y": 29, "x": "IS"}, {"y": 335, "x": "SE"}, {"y": 53, "x": "GR"}, {"y": 20, "x": "RO"}, {"y": 2008, "x": "DE"}, {"y": 28, "x": "EE"}, {"y": 186, "x": "CH"}, {"y": 73, "x": "MT"}, {"y": 243, "x": "FI"}, {"y": 16, "x": "LT"}, {"y": 947, "x": "IT"}, {"y": 11, "x": "LV"}, {"y": 50, "x": "CY"}, {"y": 4282, "x": "FR"}, {"y": 19, "x": "BG"}, {"y": 3225, "x": "ES"}, {"y": 83, "x": "TR"}, {"y": 142, "x": "IE"}, {"y": 118, "x": "NO"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_741c3b703d044a598bb7cc0b5021ebb5.bindTooltip(
+                `<div>
+                     students: UK
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4eda42994ac5419bb74b0608082e180c = L.marker(
+                [49.815273, 6.129583],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_cc2192510e7748a5b3f900221e370944 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_393174526a4e440cbe7233f7c888d184 = $(`             <div id="vega_lite_393174526a4e440cbe7233f7c888d184"></div>             `)[0];
+            popup_cc2192510e7748a5b3f900221e370944.setContent(vega_lite_393174526a4e440cbe7233f7c888d184);
+        
+
+        marker_4eda42994ac5419bb74b0608082e180c.bindPopup(popup_cc2192510e7748a5b3f900221e370944)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_393174526a4e440cbe7233f7c888d184, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves LU", "mark": "bar", "data": {"values": [{"y": 8, "x": "PT"}, {"y": 1, "x": "PL"}, {"y": 221, "x": "DE"}, {"y": 8, "x": "CZ"}, {"y": 21, "x": "CH"}, {"y": 36, "x": "BE"}, {"y": 7, "x": "FI"}, {"y": 12, "x": "AT"}, {"y": 3, "x": "HU"}, {"y": 4, "x": "NL"}, {"y": 5, "x": "ES"}, {"y": 1, "x": "TR"}, {"y": 104, "x": "FR"}, {"y": 4, "x": "SE"}, {"y": 6, "x": "UK"}, {"y": 9, "x": "IT"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_4eda42994ac5419bb74b0608082e180c.bindTooltip(
+                `<div>
+                     students: LU
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f1dcc83dad15470db00e0ff7e28eb974 = L.marker(
+                [39.074208, 21.824312],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_f9c3c91ad69541a8a0639aa093610de3 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_00a8cd5a57204a6ca7fc8611643cf67a = $(`             <div id="vega_lite_00a8cd5a57204a6ca7fc8611643cf67a"></div>             `)[0];
+            popup_f9c3c91ad69541a8a0639aa093610de3.setContent(vega_lite_00a8cd5a57204a6ca7fc8611643cf67a);
+        
+
+        marker_f1dcc83dad15470db00e0ff7e28eb974.bindPopup(popup_f9c3c91ad69541a8a0639aa093610de3)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_00a8cd5a57204a6ca7fc8611643cf67a, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves GR", "mark": "bar", "data": {"values": [{"y": 144, "x": "PT"}, {"y": 116, "x": "PL"}, {"y": 182, "x": "CZ"}, {"y": 505, "x": "ES"}, {"y": 31, "x": "NO"}, {"y": 110, "x": "AT"}, {"y": 1, "x": "HR"}, {"y": 50, "x": "HU"}, {"y": 178, "x": "NL"}, {"y": 18, "x": "SI"}, {"y": 1, "x": "IS"}, {"y": 14, "x": "SK"}, {"y": 5, "x": "LU"}, {"y": 190, "x": "UK"}, {"y": 104, "x": "SE"}, {"y": 17, "x": "RO"}, {"y": 513, "x": "DE"}, {"y": 1, "x": "LI"}, {"y": 10, "x": "EE"}, {"y": 29, "x": "CH"}, {"y": 88, "x": "FI"}, {"y": 19, "x": "LT"}, {"y": 260, "x": "IT"}, {"y": 6, "x": "LV"}, {"y": 85, "x": "CY"}, {"y": 537, "x": "FR"}, {"y": 13, "x": "BG"}, {"y": 83, "x": "DK"}, {"y": 93, "x": "TR"}, {"y": 17, "x": "IE"}, {"y": 168, "x": "BE"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_f1dcc83dad15470db00e0ff7e28eb974.bindTooltip(
+                `<div>
+                     students: GR
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b5fdbdc1ae3407aa638ee3173082a3c = L.marker(
+                [45.943161, 24.96676],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_1959edc3c7744a848091ec27b648c235 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_1c56be23bd7b49f8a4869b468a8271ac = $(`             <div id="vega_lite_1c56be23bd7b49f8a4869b468a8271ac"></div>             `)[0];
+            popup_1959edc3c7744a848091ec27b648c235.setContent(vega_lite_1c56be23bd7b49f8a4869b468a8271ac);
+        
+
+        marker_5b5fdbdc1ae3407aa638ee3173082a3c.bindPopup(popup_1959edc3c7744a848091ec27b648c235)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_1c56be23bd7b49f8a4869b468a8271ac, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves RO", "mark": "bar", "data": {"values": [{"y": 257, "x": "PT"}, {"y": 131, "x": "PL"}, {"y": 56, "x": "CZ"}, {"y": 605, "x": "ES"}, {"y": 159, "x": "BE"}, {"y": 127, "x": "AT"}, {"y": 4, "x": "HR"}, {"y": 291, "x": "HU"}, {"y": 20, "x": "LT"}, {"y": 112, "x": "NL"}, {"y": 10, "x": "SI"}, {"y": 3, "x": "IS"}, {"y": 31, "x": "SK"}, {"y": 170, "x": "UK"}, {"y": 22, "x": "SE"}, {"y": 134, "x": "GR"}, {"y": 529, "x": "DE"}, {"y": 2, "x": "LI"}, {"y": 13, "x": "CH"}, {"y": 11, "x": "MT"}, {"y": 29, "x": "FI"}, {"y": 4, "x": "EE"}, {"y": 459, "x": "IT"}, {"y": 9, "x": "LV"}, {"y": 28, "x": "CY"}, {"y": 1093, "x": "FR"}, {"y": 4, "x": "BG"}, {"y": 88, "x": "DK"}, {"y": 129, "x": "TR"}, {"y": 16, "x": "IE"}, {"y": 28, "x": "NO"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_5b5fdbdc1ae3407aa638ee3173082a3c.bindTooltip(
+                `<div>
+                     students: RO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d1497f6936e8431cb82b3fe603e60e06 = L.marker(
+                [51.165691, 10.451526],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_6e7104852b0f4072b98f9b1907c2c588 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_832401531b5e459caccf56caf808190a = $(`             <div id="vega_lite_832401531b5e459caccf56caf808190a"></div>             `)[0];
+            popup_6e7104852b0f4072b98f9b1907c2c588.setContent(vega_lite_832401531b5e459caccf56caf808190a);
+        
+
+        marker_d1497f6936e8431cb82b3fe603e60e06.bindPopup(popup_6e7104852b0f4072b98f9b1907c2c588)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_832401531b5e459caccf56caf808190a, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves DE", "mark": "bar", "data": {"values": [{"y": 550, "x": "PT"}, {"y": 827, "x": "PL"}, {"y": 448, "x": "CZ"}, {"y": 958, "x": "DK"}, {"y": 603, "x": "BE"}, {"y": 801, "x": "AT"}, {"y": 29, "x": "HR"}, {"y": 528, "x": "HU"}, {"y": 1065, "x": "NL"}, {"y": 100, "x": "SI"}, {"y": 129, "x": "IS"}, {"y": 54, "x": "SK"}, {"y": 66, "x": "LU"}, {"y": 4330, "x": "UK"}, {"y": 2641, "x": "SE"}, {"y": 181, "x": "GR"}, {"y": 120, "x": "RO"}, {"y": 11, "x": "LI"}, {"y": 50, "x": "CY"}, {"y": 1188, "x": "CH"}, {"y": 93, "x": "MT"}, {"y": 1206, "x": "FI"}, {"y": 168, "x": "EE"}, {"y": 1781, "x": "IT"}, {"y": 136, "x": "LV"}, {"y": 130, "x": "LT"}, {"y": 5381, "x": "FR"}, {"y": 60, "x": "BG"}, {"y": 6167, "x": "ES"}, {"y": 1392, "x": "TR"}, {"y": 1067, "x": "IE"}, {"y": 1083, "x": "NO"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_d1497f6936e8431cb82b3fe603e60e06.bindTooltip(
+                `<div>
+                     students: DE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_68cf62f8adad4ee4aa29e44ee413d9b3 = L.marker(
+                [47.166, 9.555373],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_03e106cd074e424ea005207550901318 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_9a39640a73584c37aac6bef8e707c02e = $(`             <div id="vega_lite_9a39640a73584c37aac6bef8e707c02e"></div>             `)[0];
+            popup_03e106cd074e424ea005207550901318.setContent(vega_lite_9a39640a73584c37aac6bef8e707c02e);
+        
+
+        marker_68cf62f8adad4ee4aa29e44ee413d9b3.bindPopup(popup_03e106cd074e424ea005207550901318)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_9a39640a73584c37aac6bef8e707c02e, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves LI", "mark": "bar", "data": {"values": [{"y": 2, "x": "DE"}, {"y": 1, "x": "CZ"}, {"y": 1, "x": "DK"}, {"y": 1, "x": "BE"}, {"y": 4, "x": "FI"}, {"y": 2, "x": "NO"}, {"y": 1, "x": "IT"}, {"y": 1, "x": "LV"}, {"y": 1, "x": "HU"}, {"y": 2, "x": "NL"}, {"y": 9, "x": "ES"}, {"y": 1, "x": "IS"}, {"y": 2, "x": "TR"}, {"y": 2, "x": "FR"}, {"y": 2, "x": "IE"}, {"y": 4, "x": "UK"}, {"y": 2, "x": "SE"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_68cf62f8adad4ee4aa29e44ee413d9b3.bindTooltip(
+                `<div>
+                     students: LI
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_47e2bc2a84c344f8b9ef8894364cedf9 = L.marker(
+                [58.595272, 25.013607],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_f05ecb5a38724728860ecf272f97b4c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_7e60f05b36cb4426ad94955bd4f2d834 = $(`             <div id="vega_lite_7e60f05b36cb4426ad94955bd4f2d834"></div>             `)[0];
+            popup_f05ecb5a38724728860ecf272f97b4c1.setContent(vega_lite_7e60f05b36cb4426ad94955bd4f2d834);
+        
+
+        marker_47e2bc2a84c344f8b9ef8894364cedf9.bindPopup(popup_f05ecb5a38724728860ecf272f97b4c1)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_7e60f05b36cb4426ad94955bd4f2d834, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves EE", "mark": "bar", "data": {"values": [{"y": 63, "x": "PT"}, {"y": 11, "x": "PL"}, {"y": 45, "x": "CZ"}, {"y": 137, "x": "ES"}, {"y": 23, "x": "BE"}, {"y": 16, "x": "NO"}, {"y": 32, "x": "AT"}, {"y": 28, "x": "HU"}, {"y": 48, "x": "NL"}, {"y": 4, "x": "SI"}, {"y": 3, "x": "SK"}, {"y": 59, "x": "UK"}, {"y": 3, "x": "IE"}, {"y": 14, "x": "GR"}, {"y": 131, "x": "DE"}, {"y": 10, "x": "CH"}, {"y": 7, "x": "MT"}, {"y": 150, "x": "FI"}, {"y": 7, "x": "LT"}, {"y": 7, "x": "IS"}, {"y": 21, "x": "LV"}, {"y": 10, "x": "CY"}, {"y": 73, "x": "FR"}, {"y": 5, "x": "BG"}, {"y": 36, "x": "DK"}, {"y": 28, "x": "TR"}, {"y": 67, "x": "SE"}, {"y": 51, "x": "IT"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_47e2bc2a84c344f8b9ef8894364cedf9.bindTooltip(
+                `<div>
+                     students: EE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_da869616267d407381fae3ca616fb937 = L.marker(
+                [46.818188, 8.227512],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_37bfa88577d24a1ba412d38ac3c8db9d = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_d9467096bafa418ab12a8e4eda09f7b5 = $(`             <div id="vega_lite_d9467096bafa418ab12a8e4eda09f7b5"></div>             `)[0];
+            popup_37bfa88577d24a1ba412d38ac3c8db9d.setContent(vega_lite_d9467096bafa418ab12a8e4eda09f7b5);
+        
+
+        marker_da869616267d407381fae3ca616fb937.bindPopup(popup_37bfa88577d24a1ba412d38ac3c8db9d)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_d9467096bafa418ab12a8e4eda09f7b5, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves CH", "mark": "bar", "data": {"values": [{"y": 35, "x": "PT"}, {"y": 19, "x": "PL"}, {"y": 12, "x": "CZ"}, {"y": 91, "x": "DK"}, {"y": 84, "x": "BE"}, {"y": 123, "x": "AT"}, {"y": 5, "x": "LT"}, {"y": 151, "x": "NL"}, {"y": 2, "x": "SI"}, {"y": 11, "x": "HU"}, {"y": 1, "x": "SK"}, {"y": 299, "x": "UK"}, {"y": 61, "x": "IE"}, {"y": 8, "x": "GR"}, {"y": 2, "x": "RO"}, {"y": 587, "x": "DE"}, {"y": 4, "x": "MT"}, {"y": 74, "x": "FI"}, {"y": 2, "x": "EE"}, {"y": 7, "x": "LV"}, {"y": 1, "x": "CY"}, {"y": 377, "x": "FR"}, {"y": 3, "x": "BG"}, {"y": 363, "x": "ES"}, {"y": 234, "x": "SE"}, {"y": 157, "x": "IT"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_da869616267d407381fae3ca616fb937.bindTooltip(
+                `<div>
+                     students: CH
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_83935dac41014a1c8f9dd0bfbc2bf0bd = L.marker(
+                [35.937496, 14.375416],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_1023641ae9b44158a72c0be23b66e832 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_4cde49070caa49fd9a3654d30665ab25 = $(`             <div id="vega_lite_4cde49070caa49fd9a3654d30665ab25"></div>             `)[0];
+            popup_1023641ae9b44158a72c0be23b66e832.setContent(vega_lite_4cde49070caa49fd9a3654d30665ab25);
+        
+
+        marker_83935dac41014a1c8f9dd0bfbc2bf0bd.bindPopup(popup_1023641ae9b44158a72c0be23b66e832)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_4cde49070caa49fd9a3654d30665ab25, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves MT", "mark": "bar", "data": {"values": [{"y": 2, "x": "PT"}, {"y": 4, "x": "PL"}, {"y": 19, "x": "DE"}, {"y": 7, "x": "ES"}, {"y": 7, "x": "BE"}, {"y": 2, "x": "LT"}, {"y": 5, "x": "HU"}, {"y": 5, "x": "NL"}, {"y": 3, "x": "DK"}, {"y": 1, "x": "SK"}, {"y": 7, "x": "IE"}, {"y": 45, "x": "UK"}, {"y": 42, "x": "IT"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_83935dac41014a1c8f9dd0bfbc2bf0bd.bindTooltip(
+                `<div>
+                     students: MT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ea73e95b79a4c67ab27c2fd5f9fa8ad = L.marker(
+                [61.92411, 25.748151],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_0785cc759f59469ea4deaf893bb7a758 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_80ea97976ada4b53a513dad5c36659e1 = $(`             <div id="vega_lite_80ea97976ada4b53a513dad5c36659e1"></div>             `)[0];
+            popup_0785cc759f59469ea4deaf893bb7a758.setContent(vega_lite_80ea97976ada4b53a513dad5c36659e1);
+        
+
+        marker_1ea73e95b79a4c67ab27c2fd5f9fa8ad.bindPopup(popup_0785cc759f59469ea4deaf893bb7a758)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_80ea97976ada4b53a513dad5c36659e1, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves FI", "mark": "bar", "data": {"values": [{"y": 140, "x": "PT"}, {"y": 53, "x": "PL"}, {"y": 123, "x": "CZ"}, {"y": 88, "x": "DK"}, {"y": 191, "x": "BE"}, {"y": 308, "x": "AT"}, {"y": 8, "x": "HR"}, {"y": 107, "x": "HU"}, {"y": 450, "x": "NL"}, {"y": 48, "x": "SI"}, {"y": 31, "x": "IS"}, {"y": 21, "x": "SK"}, {"y": 6, "x": "LU"}, {"y": 648, "x": "UK"}, {"y": 202, "x": "SE"}, {"y": 61, "x": "GR"}, {"y": 5, "x": "RO"}, {"y": 885, "x": "DE"}, {"y": 3, "x": "LI"}, {"y": 30, "x": "CY"}, {"y": 131, "x": "CH"}, {"y": 29, "x": "MT"}, {"y": 63, "x": "EE"}, {"y": 140, "x": "IT"}, {"y": 11, "x": "LV"}, {"y": 20, "x": "LT"}, {"y": 479, "x": "FR"}, {"y": 6, "x": "BG"}, {"y": 743, "x": "ES"}, {"y": 33, "x": "TR"}, {"y": 152, "x": "IE"}, {"y": 50, "x": "NO"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_1ea73e95b79a4c67ab27c2fd5f9fa8ad.bindTooltip(
+                `<div>
+                     students: FI
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ed7a090117f04d01b41f3ff21ab58270 = L.marker(
+                [55.169438, 23.881275],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_df28b6edc406460d8bb3258fe86726bc = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_b639606d33a44bec9cec7c98d110a44f = $(`             <div id="vega_lite_b639606d33a44bec9cec7c98d110a44f"></div>             `)[0];
+            popup_df28b6edc406460d8bb3258fe86726bc.setContent(vega_lite_b639606d33a44bec9cec7c98d110a44f);
+        
+
+        marker_ed7a090117f04d01b41f3ff21ab58270.bindPopup(popup_df28b6edc406460d8bb3258fe86726bc)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_b639606d33a44bec9cec7c98d110a44f, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves LT", "mark": "bar", "data": {"values": [{"y": 296, "x": "PT"}, {"y": 144, "x": "PL"}, {"y": 138, "x": "CZ"}, {"y": 195, "x": "DK"}, {"y": 80, "x": "NO"}, {"y": 69, "x": "AT"}, {"y": 14, "x": "HR"}, {"y": 70, "x": "HU"}, {"y": 112, "x": "NL"}, {"y": 57, "x": "SI"}, {"y": 44, "x": "SK"}, {"y": 1, "x": "LU"}, {"y": 168, "x": "UK"}, {"y": 23, "x": "IE"}, {"y": 119, "x": "GR"}, {"y": 22, "x": "RO"}, {"y": 264, "x": "DE"}, {"y": 66, "x": "CY"}, {"y": 25, "x": "CH"}, {"y": 48, "x": "MT"}, {"y": 201, "x": "FI"}, {"y": 45, "x": "EE"}, {"y": 10, "x": "IS"}, {"y": 84, "x": "LV"}, {"y": 123, "x": "BE"}, {"y": 185, "x": "FR"}, {"y": 40, "x": "BG"}, {"y": 311, "x": "ES"}, {"y": 259, "x": "TR"}, {"y": 138, "x": "SE"}, {"y": 175, "x": "IT"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_ed7a090117f04d01b41f3ff21ab58270.bindTooltip(
+                `<div>
+                     students: LT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_90ef4977026d467a9cca99dc49c98b0b = L.marker(
+                [41.87194, 12.56738],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_aa7b16bbe4dc4deabac97d7eb0e9e11e = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_ad1fbd6cdf3241b5843254aa0bed2137 = $(`             <div id="vega_lite_ad1fbd6cdf3241b5843254aa0bed2137"></div>             `)[0];
+            popup_aa7b16bbe4dc4deabac97d7eb0e9e11e.setContent(vega_lite_ad1fbd6cdf3241b5843254aa0bed2137);
+        
+
+        marker_90ef4977026d467a9cca99dc49c98b0b.bindPopup(popup_aa7b16bbe4dc4deabac97d7eb0e9e11e)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_ad1fbd6cdf3241b5843254aa0bed2137, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves IT", "mark": "bar", "data": {"values": [{"y": 1150, "x": "PT"}, {"y": 455, "x": "PL"}, {"y": 207, "x": "CZ"}, {"y": 7651, "x": "ES"}, {"y": 33, "x": "IS"}, {"y": 290, "x": "NO"}, {"y": 362, "x": "AT"}, {"y": 10, "x": "HR"}, {"y": 118, "x": "LT"}, {"y": 766, "x": "NL"}, {"y": 60, "x": "SI"}, {"y": 213, "x": "HU"}, {"y": 58, "x": "SK"}, {"y": 2037, "x": "UK"}, {"y": 621, "x": "SE"}, {"y": 136, "x": "GR"}, {"y": 188, "x": "RO"}, {"y": 2381, "x": "DE"}, {"y": 275, "x": "CH"}, {"y": 108, "x": "MT"}, {"y": 487, "x": "FI"}, {"y": 91, "x": "EE"}, {"y": 17, "x": "LU"}, {"y": 42, "x": "LV"}, {"y": 36, "x": "CY"}, {"y": 3403, "x": "FR"}, {"y": 23, "x": "BG"}, {"y": 437, "x": "DK"}, {"y": 341, "x": "TR"}, {"y": 419, "x": "IE"}, {"y": 960, "x": "BE"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_90ef4977026d467a9cca99dc49c98b0b.bindTooltip(
+                `<div>
+                     students: IT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6dc943fc03bc451ebefcb55b9850ab67 = L.marker(
+                [64.963051, -19.020835],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_5e65c3cad8064e9499cfe2b8b525c00d = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_8acdff6e7d314221828e93002dfa2502 = $(`             <div id="vega_lite_8acdff6e7d314221828e93002dfa2502"></div>             `)[0];
+            popup_5e65c3cad8064e9499cfe2b8b525c00d.setContent(vega_lite_8acdff6e7d314221828e93002dfa2502);
+        
+
+        marker_6dc943fc03bc451ebefcb55b9850ab67.bindPopup(popup_5e65c3cad8064e9499cfe2b8b525c00d)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_8acdff6e7d314221828e93002dfa2502, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves IS", "mark": "bar", "data": {"values": [{"y": 2, "x": "PT"}, {"y": 1, "x": "PL"}, {"y": 29, "x": "DE"}, {"y": 7, "x": "CZ"}, {"y": 34, "x": "DK"}, {"y": 3, "x": "MT"}, {"y": 5, "x": "BE"}, {"y": 2, "x": "FI"}, {"y": 1, "x": "LT"}, {"y": 22, "x": "IT"}, {"y": 17, "x": "AT"}, {"y": 4, "x": "HU"}, {"y": 2, "x": "IE"}, {"y": 8, "x": "NL"}, {"y": 1, "x": "BG"}, {"y": 2, "x": "SI"}, {"y": 31, "x": "ES"}, {"y": 44, "x": "SE"}, {"y": 21, "x": "UK"}, {"y": 21, "x": "FR"}, {"y": 4, "x": "GR"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_6dc943fc03bc451ebefcb55b9850ab67.bindTooltip(
+                `<div>
+                     students: IS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b97305c1b3334ea98d4fca9bf0c3dca1 = L.marker(
+                [56.879635, 24.603189],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_d19af330dbee4ce9909fa1eb9699db0d = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_8f4558a772ae42dcad2c206cc5323ee2 = $(`             <div id="vega_lite_8f4558a772ae42dcad2c206cc5323ee2"></div>             `)[0];
+            popup_d19af330dbee4ce9909fa1eb9699db0d.setContent(vega_lite_8f4558a772ae42dcad2c206cc5323ee2);
+        
+
+        marker_b97305c1b3334ea98d4fca9bf0c3dca1.bindPopup(popup_d19af330dbee4ce9909fa1eb9699db0d)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_8f4558a772ae42dcad2c206cc5323ee2, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves LV", "mark": "bar", "data": {"values": [{"y": 92, "x": "PT"}, {"y": 114, "x": "PL"}, {"y": 44, "x": "CZ"}, {"y": 92, "x": "DK"}, {"y": 62, "x": "BE"}, {"y": 46, "x": "AT"}, {"y": 5, "x": "HR"}, {"y": 151, "x": "LT"}, {"y": 90, "x": "NL"}, {"y": 23, "x": "SI"}, {"y": 24, "x": "HU"}, {"y": 21, "x": "SK"}, {"y": 6, "x": "LU"}, {"y": 63, "x": "UK"}, {"y": 10, "x": "IE"}, {"y": 237, "x": "GR"}, {"y": 6, "x": "RO"}, {"y": 227, "x": "DE"}, {"y": 7, "x": "LI"}, {"y": 69, "x": "EE"}, {"y": 6, "x": "CH"}, {"y": 4, "x": "MT"}, {"y": 86, "x": "FI"}, {"y": 82, "x": "IT"}, {"y": 10, "x": "IS"}, {"y": 36, "x": "CY"}, {"y": 94, "x": "FR"}, {"y": 48, "x": "BG"}, {"y": 217, "x": "ES"}, {"y": 58, "x": "TR"}, {"y": 100, "x": "SE"}, {"y": 62, "x": "NO"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_b97305c1b3334ea98d4fca9bf0c3dca1.bindTooltip(
+                `<div>
+                     students: LV
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f3908693854a483195d338473ec59028 = L.marker(
+                [35.126413, 33.429859],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_66cead0203534afa8f4d2b3514d6705d = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_833a0b4f0a3e42dfaf9ede5f4cf611f8 = $(`             <div id="vega_lite_833a0b4f0a3e42dfaf9ede5f4cf611f8"></div>             `)[0];
+            popup_66cead0203534afa8f4d2b3514d6705d.setContent(vega_lite_833a0b4f0a3e42dfaf9ede5f4cf611f8);
+        
+
+        marker_f3908693854a483195d338473ec59028.bindPopup(popup_66cead0203534afa8f4d2b3514d6705d)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_833a0b4f0a3e42dfaf9ede5f4cf611f8, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves CY", "mark": "bar", "data": {"values": [{"y": 3, "x": "PT"}, {"y": 7, "x": "PL"}, {"y": 1, "x": "CZ"}, {"y": 4, "x": "DK"}, {"y": 16, "x": "BE"}, {"y": 3, "x": "AT"}, {"y": 4, "x": "HU"}, {"y": 4, "x": "NL"}, {"y": 6, "x": "SI"}, {"y": 36, "x": "UK"}, {"y": 6, "x": "SE"}, {"y": 44, "x": "GR"}, {"y": 2, "x": "RO"}, {"y": 8, "x": "DE"}, {"y": 1, "x": "MT"}, {"y": 7, "x": "FI"}, {"y": 3, "x": "EE"}, {"y": 1, "x": "IS"}, {"y": 2, "x": "LT"}, {"y": 22, "x": "FR"}, {"y": 55, "x": "ES"}, {"y": 6, "x": "TR"}, {"y": 2, "x": "IE"}, {"y": 14, "x": "IT"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_f3908693854a483195d338473ec59028.bindTooltip(
+                `<div>
+                     students: CY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_14befa25ff5c46ee86b8c4cc422406a3 = L.marker(
+                [46.227638, 2.213749],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_4daceabb783f44cab66dfc2bb8fe7ddf = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_e1c331f79cbe43bebdcecc6f50625246 = $(`             <div id="vega_lite_e1c331f79cbe43bebdcecc6f50625246"></div>             `)[0];
+            popup_4daceabb783f44cab66dfc2bb8fe7ddf.setContent(vega_lite_e1c331f79cbe43bebdcecc6f50625246);
+        
+
+        marker_14befa25ff5c46ee86b8c4cc422406a3.bindPopup(popup_4daceabb783f44cab66dfc2bb8fe7ddf)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_e1c331f79cbe43bebdcecc6f50625246, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves FR", "mark": "bar", "data": {"values": [{"y": 392, "x": "PT"}, {"y": 743, "x": "PL"}, {"y": 678, "x": "CZ"}, {"y": 6787, "x": "ES"}, {"y": 1079, "x": "BE"}, {"y": 453, "x": "AT"}, {"y": 51, "x": "HR"}, {"y": 184, "x": "LT"}, {"y": 1748, "x": "IE"}, {"y": 1302, "x": "NL"}, {"y": 133, "x": "SI"}, {"y": 63, "x": "IS"}, {"y": 143, "x": "SK"}, {"y": 6502, "x": "UK"}, {"y": 170, "x": "LU"}, {"y": 338, "x": "GR"}, {"y": 350, "x": "RO"}, {"y": 3768, "x": "DE"}, {"y": 118, "x": "EE"}, {"y": 491, "x": "CH"}, {"y": 233, "x": "MT"}, {"y": 1122, "x": "FI"}, {"y": 482, "x": "HU"}, {"y": 1847, "x": "IT"}, {"y": 73, "x": "LV"}, {"y": 56, "x": "CY"}, {"y": 62, "x": "BG"}, {"y": 911, "x": "DK"}, {"y": 485, "x": "TR"}, {"y": 1801, "x": "SE"}, {"y": 696, "x": "NO"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_14befa25ff5c46ee86b8c4cc422406a3.bindTooltip(
+                `<div>
+                     students: FR
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f93ab0b278894ac4ad999fdf57d281a0 = L.marker(
+                [42.733883, 25.48583],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_910c4f5b0d354b0fa755e3275c9ef638 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_c6b97d4d5f6d431ba0fb74234f394ad7 = $(`             <div id="vega_lite_c6b97d4d5f6d431ba0fb74234f394ad7"></div>             `)[0];
+            popup_910c4f5b0d354b0fa755e3275c9ef638.setContent(vega_lite_c6b97d4d5f6d431ba0fb74234f394ad7);
+        
+
+        marker_f93ab0b278894ac4ad999fdf57d281a0.bindPopup(popup_910c4f5b0d354b0fa755e3275c9ef638)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_c6b97d4d5f6d431ba0fb74234f394ad7, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves BG", "mark": "bar", "data": {"values": [{"y": 63, "x": "PT"}, {"y": 104, "x": "PL"}, {"y": 102, "x": "CZ"}, {"y": 184, "x": "ES"}, {"y": 7, "x": "NO"}, {"y": 94, "x": "AT"}, {"y": 10, "x": "HR"}, {"y": 17, "x": "LT"}, {"y": 58, "x": "NL"}, {"y": 23, "x": "SI"}, {"y": 39, "x": "SK"}, {"y": 3, "x": "LU"}, {"y": 87, "x": "UK"}, {"y": 9, "x": "IE"}, {"y": 76, "x": "GR"}, {"y": 27, "x": "RO"}, {"y": 342, "x": "DE"}, {"y": 2, "x": "LI"}, {"y": 6, "x": "EE"}, {"y": 4, "x": "CH"}, {"y": 5, "x": "MT"}, {"y": 25, "x": "FI"}, {"y": 29, "x": "HU"}, {"y": 117, "x": "IT"}, {"y": 12, "x": "LV"}, {"y": 3, "x": "CY"}, {"y": 169, "x": "FR"}, {"y": 25, "x": "DK"}, {"y": 96, "x": "TR"}, {"y": 23, "x": "SE"}, {"y": 73, "x": "BE"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_f93ab0b278894ac4ad999fdf57d281a0.bindTooltip(
+                `<div>
+                     students: BG
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_985e046ae03f4ff3bea202117d2c21bf = L.marker(
+                [56.26392, 9.501785],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_14c00237f4144592b9db137d0acea8a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_235ef4f0070f4f75af0ecc6fbbbe29e9 = $(`             <div id="vega_lite_235ef4f0070f4f75af0ecc6fbbbe29e9"></div>             `)[0];
+            popup_14c00237f4144592b9db137d0acea8a4.setContent(vega_lite_235ef4f0070f4f75af0ecc6fbbbe29e9);
+        
+
+        marker_985e046ae03f4ff3bea202117d2c21bf.bindPopup(popup_14c00237f4144592b9db137d0acea8a4)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_235ef4f0070f4f75af0ecc6fbbbe29e9, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves DK", "mark": "bar", "data": {"values": [{"y": 78, "x": "PT"}, {"y": 37, "x": "PL"}, {"y": 35, "x": "CZ"}, {"y": 72, "x": "BE"}, {"y": 112, "x": "NO"}, {"y": 86, "x": "AT"}, {"y": 1, "x": "HR"}, {"y": 44, "x": "LT"}, {"y": 241, "x": "NL"}, {"y": 14, "x": "SI"}, {"y": 8, "x": "SK"}, {"y": 622, "x": "UK"}, {"y": 88, "x": "SE"}, {"y": 32, "x": "GR"}, {"y": 35, "x": "RO"}, {"y": 543, "x": "DE"}, {"y": 1, "x": "LI"}, {"y": 13, "x": "EE"}, {"y": 73, "x": "CH"}, {"y": 24, "x": "MT"}, {"y": 27, "x": "FI"}, {"y": 23, "x": "HU"}, {"y": 29, "x": "IS"}, {"y": 36, "x": "LV"}, {"y": 13, "x": "CY"}, {"y": 325, "x": "FR"}, {"y": 41, "x": "BG"}, {"y": 396, "x": "ES"}, {"y": 94, "x": "TR"}, {"y": 52, "x": "IE"}, {"y": 102, "x": "IT"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_985e046ae03f4ff3bea202117d2c21bf.bindTooltip(
+                `<div>
+                     students: DK
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9990af1c7cb84186860b40bac49cc8bd = L.marker(
+                [38.963745, 35.243322],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_e6dd9f19281143aca89384a42e0fce82 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_d8b42cc6438b43ce8aa2bff75f40dc40 = $(`             <div id="vega_lite_d8b42cc6438b43ce8aa2bff75f40dc40"></div>             `)[0];
+            popup_e6dd9f19281143aca89384a42e0fce82.setContent(vega_lite_d8b42cc6438b43ce8aa2bff75f40dc40);
+        
+
+        marker_9990af1c7cb84186860b40bac49cc8bd.bindPopup(popup_e6dd9f19281143aca89384a42e0fce82)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_d8b42cc6438b43ce8aa2bff75f40dc40, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves TR", "mark": "bar", "data": {"values": [{"y": 433, "x": "PT"}, {"y": 1964, "x": "PL"}, {"y": 576, "x": "CZ"}, {"y": 897, "x": "ES"}, {"y": 339, "x": "BE"}, {"y": 259, "x": "AT"}, {"y": 525, "x": "HU"}, {"y": 575, "x": "NL"}, {"y": 158, "x": "SI"}, {"y": 136, "x": "SK"}, {"y": 422, "x": "UK"}, {"y": 62, "x": "IE"}, {"y": 124, "x": "GR"}, {"y": 231, "x": "RO"}, {"y": 1967, "x": "DE"}, {"y": 7, "x": "MT"}, {"y": 145, "x": "FI"}, {"y": 70, "x": "EE"}, {"y": 1, "x": "LU"}, {"y": 102, "x": "LV"}, {"y": 402, "x": "LT"}, {"y": 44, "x": "BG"}, {"y": 255, "x": "DK"}, {"y": 610, "x": "FR"}, {"y": 425, "x": "SE"}, {"y": 1095, "x": "IT"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_9990af1c7cb84186860b40bac49cc8bd.bindTooltip(
+                `<div>
+                     students: TR
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_40140783bd77443ca750ab12a555cb19 = L.marker(
+                [53.41291, -8.24389],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_034498eff1034922a1ec5d9851e27344 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_34a715c114b942d589214b43d2159ceb = $(`             <div id="vega_lite_34a715c114b942d589214b43d2159ceb"></div>             `)[0];
+            popup_034498eff1034922a1ec5d9851e27344.setContent(vega_lite_34a715c114b942d589214b43d2159ceb);
+        
+
+        marker_40140783bd77443ca750ab12a555cb19.bindPopup(popup_034498eff1034922a1ec5d9851e27344)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_34a715c114b942d589214b43d2159ceb, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves IE", "mark": "bar", "data": {"values": [{"y": 16, "x": "PT"}, {"y": 20, "x": "PL"}, {"y": 52, "x": "CZ"}, {"y": 449, "x": "ES"}, {"y": 109, "x": "BE"}, {"y": 33, "x": "NO"}, {"y": 50, "x": "AT"}, {"y": 22, "x": "HU"}, {"y": 154, "x": "NL"}, {"y": 2, "x": "SI"}, {"y": 2, "x": "SK"}, {"y": 412, "x": "UK"}, {"y": 25, "x": "LU"}, {"y": 5, "x": "GR"}, {"y": 2, "x": "RO"}, {"y": 365, "x": "DE"}, {"y": 1, "x": "LI"}, {"y": 31, "x": "CH"}, {"y": 40, "x": "MT"}, {"y": 37, "x": "FI"}, {"y": 1, "x": "EE"}, {"y": 5, "x": "IS"}, {"y": 4, "x": "CY"}, {"y": 645, "x": "FR"}, {"y": 6, "x": "BG"}, {"y": 56, "x": "DK"}, {"y": 11, "x": "TR"}, {"y": 104, "x": "SE"}, {"y": 95, "x": "IT"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_40140783bd77443ca750ab12a555cb19.bindTooltip(
+                `<div>
+                     students: IE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a949417aa84b484d838ec647e79ef9f1 = L.marker(
+                [60.472023, 8.468946],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_bfa5e4bb4a2c4cd287d1339d260090da = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_0021fb49580043058d8b7c851dabdda8 = $(`             <div id="vega_lite_0021fb49580043058d8b7c851dabdda8"></div>             `)[0];
+            popup_bfa5e4bb4a2c4cd287d1339d260090da.setContent(vega_lite_0021fb49580043058d8b7c851dabdda8);
+        
+
+        marker_a949417aa84b484d838ec647e79ef9f1.bindPopup(popup_bfa5e4bb4a2c4cd287d1339d260090da)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_0021fb49580043058d8b7c851dabdda8, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus data eleves NO", "mark": "bar", "data": {"values": [{"y": 64, "x": "PT"}, {"y": 18, "x": "PL"}, {"y": 36, "x": "CZ"}, {"y": 164, "x": "ES"}, {"y": 50, "x": "BE"}, {"y": 47, "x": "AT"}, {"y": 21, "x": "HU"}, {"y": 135, "x": "NL"}, {"y": 10, "x": "SI"}, {"y": 4, "x": "SK"}, {"y": 222, "x": "UK"}, {"y": 107, "x": "SE"}, {"y": 8, "x": "GR"}, {"y": 234, "x": "DE"}, {"y": 11, "x": "MT"}, {"y": 16, "x": "FI"}, {"y": 9, "x": "EE"}, {"y": 2, "x": "LV"}, {"y": 1, "x": "CY"}, {"y": 234, "x": "FR"}, {"y": 2, "x": "BG"}, {"y": 182, "x": "DK"}, {"y": 32, "x": "IE"}, {"y": 81, "x": "IT"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_a949417aa84b484d838ec647e79ef9f1.bindTooltip(
+                `<div>
+                     students: NO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3dde166ee89546308b7d41114de2a811 = L.marker(
+                [54.525963, 15.955119],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_54d82bad9d3540069f9494eb37e157dd = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_a5a4db5f3bc64144b0e879b99e8cf216 = $(`             <div id="vega_lite_a5a4db5f3bc64144b0e879b99e8cf216"></div>             `)[0];
+            popup_54d82bad9d3540069f9494eb37e157dd.setContent(vega_lite_a5a4db5f3bc64144b0e879b99e8cf216);
+        
+
+        marker_3dde166ee89546308b7d41114de2a811.bindPopup(popup_54d82bad9d3540069f9494eb37e157dd)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_a5a4db5f3bc64144b0e879b99e8cf216, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus overall data", "mark": "bar", "data": {"values": [{"y": 6470, "x": "PT"}, {"y": 15283, "x": "PL"}, {"y": 7002, "x": "CZ"}, {"y": 3297, "x": "DK"}, {"y": 7085, "x": "BE"}, {"y": 1690, "x": "NO"}, {"y": 5589, "x": "AT"}, {"y": 881, "x": "HR"}, {"y": 4359, "x": "HU"}, {"y": 3526, "x": "LT"}, {"y": 9309, "x": "NL"}, {"y": 1731, "x": "SI"}, {"y": 261, "x": "IS"}, {"y": 2684, "x": "SK"}, {"y": 13660, "x": "UK"}, {"y": 2754, "x": "IE"}, {"y": 3588, "x": "GR"}, {"y": 4574, "x": "RO"}, {"y": 33343, "x": "DE"}, {"y": 38, "x": "LI"}, {"y": 2713, "x": "CH"}, {"y": 149, "x": "MT"}, {"y": 5265, "x": "FI"}, {"y": 1089, "x": "EE"}, {"y": 450, "x": "LU"}, {"y": 2192, "x": "LV"}, {"y": 257, "x": "CY"}, {"y": 33261, "x": "FR"}, {"y": 1834, "x": "BG"}, {"y": 39519, "x": "ES"}, {"y": 11824, "x": "TR"}, {"y": 3573, "x": "SE"}, {"y": 23375, "x": "IT"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_3dde166ee89546308b7d41114de2a811.bindTooltip(
+                `<div>
+                     students homes - ALL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c384eef832b44d2bac2dbeca8a96d0ac = L.marker(
+                [54.525963, 14.555119],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_321260f502f6491ba52d11df2c1b0e82 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_948a252d66f74e78b1592a9d3ada3eec = $(`             <div id="vega_lite_948a252d66f74e78b1592a9d3ada3eec"></div>             `)[0];
+            popup_321260f502f6491ba52d11df2c1b0e82.setContent(vega_lite_948a252d66f74e78b1592a9d3ada3eec);
+        
+
+        marker_c384eef832b44d2bac2dbeca8a96d0ac.bindPopup(popup_321260f502f6491ba52d11df2c1b0e82)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_948a252d66f74e78b1592a9d3ada3eec, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus overall data", "mark": "bar", "data": {"values": [{"y": 9192, "x": "PT"}, {"y": 8964, "x": "PL"}, {"y": 5834, "x": "CZ"}, {"y": 6498, "x": "DK"}, {"y": 8587, "x": "BE"}, {"y": 5750, "x": "AT"}, {"y": 376, "x": "HR"}, {"y": 3757, "x": "HU"}, {"y": 9890, "x": "NL"}, {"y": 1696, "x": "SI"}, {"y": 571, "x": "IS"}, {"y": 1355, "x": "SK"}, {"y": 498, "x": "LU"}, {"y": 25737, "x": "UK"}, {"y": 10353, "x": "SE"}, {"y": 2759, "x": "GR"}, {"y": 1716, "x": "RO"}, {"y": 27856, "x": "DE"}, {"y": 61, "x": "LI"}, {"y": 1084, "x": "EE"}, {"y": 3894, "x": "CH"}, {"y": 1201, "x": "MT"}, {"y": 6905, "x": "FI"}, {"y": 1859, "x": "LT"}, {"y": 20161, "x": "IT"}, {"y": 887, "x": "LV"}, {"y": 691, "x": "CY"}, {"y": 28953, "x": "FR"}, {"y": 902, "x": "BG"}, {"y": 39273, "x": "ES"}, {"y": 5268, "x": "TR"}, {"y": 5750, "x": "IE"}, {"y": 4347, "x": "NO"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_c384eef832b44d2bac2dbeca8a96d0ac.bindTooltip(
+                `<div>
+                     students dests - ALL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fd6d6a2b7536485db1827a2847866bed = L.marker(
+                [55.225963, 14.555119],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_b369e0d4a9ee4b2ebc2b3b1e7eeafbb1 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_518232a71a99448eb3f1b5b29591df1b = $(`             <div id="vega_lite_518232a71a99448eb3f1b5b29591df1b"></div>             `)[0];
+            popup_b369e0d4a9ee4b2ebc2b3b1e7eeafbb1.setContent(vega_lite_518232a71a99448eb3f1b5b29591df1b);
+        
+
+        marker_fd6d6a2b7536485db1827a2847866bed.bindPopup(popup_b369e0d4a9ee4b2ebc2b3b1e7eeafbb1)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_518232a71a99448eb3f1b5b29591df1b, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus overall data", "mark": "bar", "data": {"values": [{"y": 738, "x": "PT"}, {"y": 4014, "x": "PL"}, {"y": 2096, "x": "CZ"}, {"y": 3250, "x": "ES"}, {"y": 1168, "x": "BE"}, {"y": 43, "x": "MT"}, {"y": 409, "x": "NO"}, {"y": 535, "x": "SE"}, {"y": 941, "x": "AT"}, {"y": 85, "x": "HR"}, {"y": 928, "x": "LT"}, {"y": 706, "x": "NL"}, {"y": 308, "x": "SI"}, {"y": 771, "x": "SK"}, {"y": 1677, "x": "UK"}, {"y": 3, "x": "LU"}, {"y": 599, "x": "GR"}, {"y": 1273, "x": "RO"}, {"y": 3138, "x": "DE"}, {"y": 9, "x": "LI"}, {"y": 248, "x": "CH"}, {"y": 1070, "x": "HU"}, {"y": 1111, "x": "FI"}, {"y": 307, "x": "EE"}, {"y": 47, "x": "IS"}, {"y": 552, "x": "LV"}, {"y": 47, "x": "CY"}, {"y": 2366, "x": "FR"}, {"y": 736, "x": "BG"}, {"y": 402, "x": "DK"}, {"y": 1858, "x": "TR"}, {"y": 197, "x": "IE"}, {"y": 1682, "x": "IT"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_fd6d6a2b7536485db1827a2847866bed.bindTooltip(
+                `<div>
+                     teachers homes - ALL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_20e39309099246a4a190e1533761f1a2 = L.marker(
+                [53.825963, 14.555119],
+                {}
+            ).addTo(map_21dcecf6758d46b5b3023a0f4ab7c7f7);
+        
+    
+        var popup_d6d3fe6887d7488fb95d3146ea1cc1d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_1467555718a54ce4971fa2f799896279 = $(`             <div id="vega_lite_1467555718a54ce4971fa2f799896279"></div>             `)[0];
+            popup_d6d3fe6887d7488fb95d3146ea1cc1d3.setContent(vega_lite_1467555718a54ce4971fa2f799896279);
+        
+
+        marker_20e39309099246a4a190e1533761f1a2.bindPopup(popup_d6d3fe6887d7488fb95d3146ea1cc1d3)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_1467555718a54ce4971fa2f799896279, {"encoding": {"y": {"type": "quantitative", "axis": {"title": "nombre de personnes"}, "field": "y"}, "x": {"sort": "-y", "type": "nominal", "axis": {"title": "destinations"}, "field": "x"}}, "title": "Erasmus overall data", "mark": "bar", "data": {"values": [{"y": 1690, "x": "PT"}, {"y": 2130, "x": "PL"}, {"y": 1526, "x": "CZ"}, {"y": 454, "x": "DK"}, {"y": 113, "x": "MT"}, {"y": 1009, "x": "BE"}, {"y": 389, "x": "NO"}, {"y": 915, "x": "AT"}, {"y": 177, "x": "HR"}, {"y": 861, "x": "LT"}, {"y": 798, "x": "NL"}, {"y": 368, "x": "SI"}, {"y": 1131, "x": "SK"}, {"y": 9, "x": "LU"}, {"y": 1487, "x": "UK"}, {"y": 266, "x": "IE"}, {"y": 643, "x": "GR"}, {"y": 1036, "x": "RO"}, {"y": 3149, "x": "DE"}, {"y": 6, "x": "LI"}, {"y": 285, "x": "CH"}, {"y": 1048, "x": "HU"}, {"y": 1256, "x": "FI"}, {"y": 358, "x": "EE"}, {"y": 116, "x": "IS"}, {"y": 513, "x": "LV"}, {"y": 131, "x": "CY"}, {"y": 2687, "x": "FR"}, {"y": 512, "x": "BG"}, {"y": 3258, "x": "ES"}, {"y": 1485, "x": "TR"}, {"y": 605, "x": "SE"}, {"y": 2903, "x": "IT"}]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "Empty chart templates for popup teacher/students"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_20e39309099246a4a190e1533761f1a2.bindTooltip(
+                `<div>
+                     teachers dests - ALL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
